@@ -1,0 +1,2097 @@
+Roll: 3
+Question: On Motion to Table the Motion to Refer
+Description: Providing for consideration of H.Res. 6, adopting the Rules of the House of Representatives for the 116th Congress; providing for consideration of H.R. 21, making appropriations for the FY ending September 30, 2019, and for other purposes
+Roll: 4
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.Res. 6, adopting the Rules of the House of Representatives for the 116th Congress; H.R. 21, making appropriations for the FY ending September 30, 2019; H.J.Res. 1, making further continuing appropriations for the Department of Homeland Security for FY 2019, and for other purposes
+Roll: 5
+Question: On Motion to Commit with Instructions
+Description: Providing for consideration of H.Res. 6, adopting the Rules of the House of Representatives for the 116th Congress; H.R. 21, making appropriations for the FY ending September 30, 2019; H.J.Res. 1, making further continuing appropriations for the Department of Homeland Security for FY 2019, and for other purposes
+Roll: 6
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.Res. 6, adopting the Rules of the House of Representatives for the 116th Congress; H.R. 21, making appropriations for the FY ending September 30, 2019; H.J.Res. 1, making further continuing appropriations for the Department of Homeland Security for FY 2019, and for other purposes
+Roll: 7
+Question: On Agreeing to Title I of the Resolution
+Description: Adopting the Rules of the House of Representatives for the One Hundred Sixteenth Congress, and for other purposes
+Roll: 8
+Question: On Motion to Recommit with Instructions
+Description: Making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes
+Roll: 9
+Question: On Passage
+Description: Making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes
+Roll: 10
+Question: On Motion to Recommit with Instructions
+Description: Making appropriations for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 11
+Question: On Passage
+Description: Making appropriations for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 12
+Question: On Agreeing to Title II of the Resolution
+Description: Adopting the Rules of the House of Representatives for the One Hundred Sixteenth Congress, and for other purposes
+Roll: 13
+Question: On Motion to Suspend the Rules and Pass
+Description: Pandemic and All-Hazards Preparedness and Advancing Innovation Act
+Roll: 14
+Question: On Motion to Suspend the Rules and Pass
+Description: Chemical Facility Anti-Terrorism Standards Program Extension Act
+Roll: 15
+Question: On Approving the Journal
+Description: 
+Roll: 16
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 264, H.R. 265, H.R. 266, and H.R. 267; waiving a requirement of clause 6(a) of rule XIII with respect to consideration of certain resolutions reported from the Committee on Rules
+Roll: 17
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 264, H.R. 265, H.R. 266, and H.R. 267; waiving a requirement of clause 6(a) of rule XIII with respect to consideration of certain resolutions reported from the Committee on Rules
+Roll: 18
+Question: On Motion to Suspend the Rules and Pass
+Description: Clarity on Small Business Participation in Category Management Act
+Roll: 19
+Question: On Agreeing to Title III of the Resolution
+Description: Adopting the Rules of the House of Representatives for the One Hundred Sixteenth Congress, and for other purposes
+Roll: 20
+Question: On Motion to Recommit with Instructions
+Description: Making appropriations for financial services and general government for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 21
+Question: On Passage
+Description: Making appropriations for financial services and general government for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 22
+Question: On Motion to Recommit with Instructions
+Description: Making appropriations for the Department of Transportation, and Housing and Urban Development, and related agencies for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 23
+Question: On Passage
+Description: Making appropriations for the Department of Transportation, and Housing and Urban Development, and related agencies for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 24
+Question: On Motion to Recommit with Instructions
+Description: Making appropriations for Agriculture, Rural Development, Food and Drug Administration, and Related Agencies programs for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 25
+Question: On Passage
+Description: Making appropriations for Agriculture, Rural Development, Food and Drug Administration, and Related Agencies programs for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 26
+Question: On Motion to Recommit with Instructions
+Description: Making appropriations for the Department of the Interior, environment, and related agencies for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 27
+Question: On Passage
+Description: Making appropriations for the Department of the Interior, environment, and related agencies for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 28
+Question: On Motion to Suspend the Rules and Pass
+Description: Government Employee Fair Treatment Act
+Roll: 29
+Question: On Motion to Suspend the Rules and Pass
+Description: Special Envoy to Monitor and Combat Anti-Semitism Act
+Roll: 30
+Question: On Motion to Suspend the Rules and Pass
+Description: Investing in Main Street Act
+Roll: 31
+Question: On Motion to Suspend the Rules and Pass
+Description: Making further continuing appropriations for fiscal year 2019, and for other purposes
+Roll: 32
+Question: On Motion to Suspend the Rules and Agree
+Description: Rejecting White nationalism and White supremacy
+Roll: 33
+Question: On Motion to Suspend the Rules and Pass
+Description: Federal Employee Antidiscrimination Act
+Roll: 34
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 268) making supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes, and waiving a requirement of clause 6(a) of rule XIII with respect to consideration of certain resolutions reported from the Committee on Rules
+Roll: 35
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 268) making supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes, and waiving a requirement of clause 6(a) of rule XIII with respect to consideration of certain resolutions reported from the Committee on Rules
+Roll: 36
+Question: On Motion to Suspend the Rules and Pass
+Description: Expanding Contracting Opportunities for Small Businesses Act
+Roll: 37
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 38
+Question: On Motion to Recommit with Instructions
+Description: Making supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 39
+Question: On Passage
+Description: Making supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 40
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the joint resolution (H.J. Res. 28) making further continuing appropriations for fiscal year 2019, and for other purposes, and providing for consideration of motions to suspend the rules
+Roll: 41
+Question: On Motion to Suspend the Rules and Pass
+Description: Grant Reporting Efficiency and Agreements Transparency Act or GREAT Act
+Roll: 42
+Question: On Motion to Suspend the Rules and Pass
+Description: Disapproving the President’s proposal to take an action relating to the application of certain sanctions with respect to the Russian Federation
+Roll: 43
+Question: On Motion to Recommit with Instructions
+Description: Making further continuing appropriations for fiscal year 2019, and for other purposes
+Roll: 44
+Question: On Motion to Suspend the Rules and Pass
+Description: NATO Support Act
+Roll: 45
+Question: On Motion to Suspend the Rules and Pass
+Description: Hack Your State Department Act
+Roll: 46
+Question: On Passage
+Description: Making further continuing appropriations for fiscal year 2019, and for other purposes
+Roll: 47
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill H.R. 648, and consideration of the joint resolution, H.J. Res. 31; providing for consideration of motions to suspend the rules; and waiving a requirement of clause 6(a) of rule XIII with respect to consideration of certain resolutions reported from the Committee on Rules
+Roll: 48
+Question: On Motion to Recommit with Instructions
+Description: Consolidated Appropriations Act, 2019
+Roll: 49
+Question: On Passage
+Description: Consolidated Appropriations Act, 2019
+Roll: 50
+Question: On Motion to Recommit with Instructions
+Description: Making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes
+Roll: 51
+Question: On Passage
+Description: Making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes
+Roll: 52
+Question: On Motion to Suspend the Rules and Pass
+Description: Promoting Transparent Standards for Corporate Insiders Act
+Roll: 53
+Question: On Motion to Suspend the Rules and Pass
+Description: Fight Illicit Networks and Detect Trafficing Act
+Roll: 54
+Question: On Approving the Journal
+Description: 
+Roll: 55
+Question: On Motion to Adjourn
+Description: 
+Roll: 56
+Question: On Motion to Suspend the Rules and Pass
+Description: Homeland Security Assessment of Terrorists’ Use of Virtual Currencies Act
+Roll: 57
+Question: On Motion to Suspend the Rules and Pass
+Description: Pathways to Improving Homeland Security at the Local Level Act
+Roll: 58
+Question: On Motion to Suspend the Rules and Pass
+Description: Counterterrorism Advisory Board Act
+Roll: 59
+Question: Table Motion to Reconsider
+Description: Expressing the sense of Congress that financial institutions and other companies should work proactively with their customers affected by the shutdown of the Federal Government who may be facing short-term financial hardship and long-term damage to their creditworthiness through no fault of their own
+Roll: 60
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 790) to provide for a pay increase in 2019 for certain civilian employees of the Federal Government, and for other purposes, and providing for consideration of motions to suspend the rules
+Roll: 61
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 790) to provide for a pay increase in 2019 for certain civilian employees of the Federal Government, and for other purposes, and providing for consideration of motions to suspend the rules
+Roll: 62
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 63
+Question: On Motion to Recommit with Instructions
+Description: Federal Civilian Workforce Pay Raise Fairness Act
+Roll: 64
+Question: On Passage
+Description: Federal Civilian Workforce Pay Raise Fairness Act
+Roll: 65
+Question: On Motion to Suspend the Rules and Agree, as Amended
+Description: Expressing the sense of the House of Representatives that Government shutdowns are detrimental to the Nation and should not occur
+Roll: 66
+Question: On Motion to Suspend the Rules and Pass
+Description: Reviving America’s Scenic Byways Act
+Roll: 67
+Question: On Motion to Suspend the Rules and Pass
+Description: Route 66 Centennial Commission Act
+Roll: 68
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 840, the Veterans’ Access to Child Care Act; providing for adoption of H.Res. 86, providing amounts for the expenses of the Select Committee on the Climate Crisis and the Select Committee on the Modernization of Congress; providing for consideration of motions to suspend the rules
+Roll: 69
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 840, the Veterans’ Access to Child Care Act; providing for adoption of H.Res. 86, providing amounts for the expenses of the Select Committee on the Climate Crisis and the Select Committee on the Modernization of Congress; providing for consideration of motions to suspend the rules
+Roll: 70
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Preventing Crimes Against Veterans Act of 2019
+Roll: 71
+Question: On Motion to Suspend the Rules and Pass
+Description: Put Trafficking Victims First Act of 2019
+Roll: 72
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 73
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 74
+Question: On Motion to Recommit with Instructions
+Description: Veterans’ Access to Child Care Act
+Roll: 75
+Question: On Passage
+Description: Veterans’ Access to Child Care Act
+Roll: 76
+Question: On Motion to Suspend the Rules and Pass
+Description: Social Media Use in Clearance Investigations Act
+Roll: 77
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Creating Advanced Streamlined Electronic Services for Constituents Act
+Roll: 78
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.J. Res.37, directing the removal of United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress; waiving a requirement of clause 6(a) of rule XIII with respect to consideration of certain resolutions reported from the Committee on Rules
+Roll: 79
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.J. Res.37, directing the removal of United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress; waiving a requirement of clause 6(a) of rule XIII with respect to consideration of certain resolutions reported from the Committee on Rules
+Roll: 80
+Question: On Approving the Journal
+Description: 
+Roll: 81
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 82
+Question: On Motion to Recommit with Instructions
+Description: Directing the removal of United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress
+Roll: 83
+Question: On Passage
+Description: Directing the removal of United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress
+Roll: 84
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Settlement Agreement Information Database Act
+Roll: 85
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the conference report to accompany H.J. Res. 31, making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes; providing for proceedings during the period from February 15, 2019 through February 22, 2019
+Roll: 86
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the conference report to accompany H.J. Res. 31, making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes; providing for proceedings during the period from February 15, 2019 through February 22, 2019
+Roll: 87
+Question: On Agreeing to the Conference Report
+Description: Making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes
+Roll: 88
+Question: On Motion to Suspend the Rules and Pass
+Description: Innovators to Entrepreneurs Act
+Roll: 89
+Question: On Motion to Suspend the Rules and Pass
+Description: Recognizing Achievement in Classified School Employees Act
+Roll: 90
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 8) Bipartisan Background Checks Act, and providing for consideration of the bill (H.R. 1112) Enhanced Background Checks Act
+Roll: 91
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 8) Bipartisan Background Checks Act, and providing for consideration of the bill (H.R. 1112) Enhanced Background Checks Act
+Roll: 92
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the joint resolution (H.J. Res. 46) relating to a national emergency declared by the President on February 15, 2019
+Roll: 93
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the joint resolution (H.J. Res. 46) relating to a national emergency declared by the President on February 15, 2019
+Roll: 94
+Question: On Passage
+Description: Relating to a national emergency declared by the President on February 15, 2019
+Roll: 95
+Question: On Motion to Suspend the Rules and Pass
+Description: Natural Resources Management Act
+Roll: 96
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 97
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 98
+Question: On Motion to Recommit with Instructions
+Description: Bipartisan Background Checks Act
+Roll: 99
+Question: On Passage
+Description: Bipartisan Background Checks Act
+Roll: 100
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 101
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 102
+Question: On Motion to Recommit with Instructions
+Description: Enhanced Background Checks Act
+Roll: 103
+Question: On Passage
+Description: Enhanced Background Checks Act
+Roll: 104
+Question: On Motion to Suspend the Rules and Pass
+Description: Burn Pit Registry Enhancement Act
+Roll: 105
+Question: On Motion to Suspend the Rules and Pass
+Description: To designate the outstation of the Department of Veterans Affairs in North Ogden, Utah, as the Major Brent Taylor Vet Center Outstation
+Roll: 106
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 1, the For the People Act of 2019; and providing for consideration of motions to suspend the rules
+Roll: 107
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 1, the For the People Act of 2019; and providing for consideration of motions to suspend the rules
+Roll: 108
+Question: On Motion to Suspend the Rules and Agree, as Amended
+Description: Condemning anti-Semitism as hateful expressions of intolerance that are contradictory to the values and aspirations that define the people of the United States and condemning anti-Muslim discrimination and bigotry against minorities as hateful expressions of intolerance that are contrary to the values and aspirations
+Roll: 109
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 110
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 111
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 112
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 113
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 114
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 115
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 116
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 117
+Question: On Motion to Recommit with Instructions
+Description: For the People Act
+Roll: 118
+Question: On Passage
+Description: For the People Act
+Roll: 119
+Question: On Motion to Suspend the Rules and Pass
+Description: Housing Choice Voucher Mobility Demonstration Act
+Roll: 120
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Cooperate with Law Enforcement Agencies and Watch Act
+Roll: 121
+Question: On Motion to Suspend the Rules and Agree, as Amended
+Description: Calling for accountability and justice for the assassination of Boris Nemtsov
+Roll: 122
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Crimea Annexation Non-recognition Act
+Roll: 123
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Federal Register Modernization Act
+Roll: 124
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H. Con. Res. 24, expressing the sense of Congress that the report of Special Counsel Mueller should be made available to the public and to Congress; providing for proceedings during the period from March 15, 2019, through March 22, 2019
+Roll: 125
+Question: On Agreeing to the Resolution
+Description: Expressing the sense of Congress that the report of Special Counsel Mueller should be made available to the public and to Congress
+Roll: 126
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: European Energy Security and Diversification Act
+Roll: 127
+Question: On Passage, Objections of the President to the Contrary Notwithstanding
+Description: Relating to a national emergency declared by the President on February 15, 2019
+Roll: 128
+Question: On Motion to Suspend the Rules and Pass
+Description: Lytton Rancheria Homelands Act
+Roll: 129
+Question: On Motion to Suspend the Rules and Pass
+Description: Little Shell Tribe of Chippewa Indians Restoration Act
+Roll: 130
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 7, the Paycheck Fairness Act; H. Res. 124, expressing opposition to banning service in the Amred Forces by openly transgender individuals
+Roll: 131
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 7, the Paycheck Fairness Act; H. Res. 124, expressing opposition to banning service in the Amred Forces by openly transgender individuals
+Roll: 132
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 133
+Question: On Motion to Recommit with Instructions
+Description: Paycheck Fairness Act
+Roll: 134
+Question: On Passage
+Description: Paycheck Fairness Act
+Roll: 135
+Question: On Agreeing to the Resolution
+Description: Expressing opposition to banning service in the Armed Forces by openly transgender individuals
+Roll: 136
+Question: On Approving the Journal
+Description: 
+Roll: 137
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Coordinating and Leveraging Activities for School Security Act
+Roll: 138
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Terrorist and Foreign Fighter Travel Exercise Act
+Roll: 139
+Question: On Approving the Journal
+Description: 
+Roll: 140
+Question: On Ordering the Previous Question
+Description: Consideration of (S.J.Res. 7) to direct the removal of the United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress; consideration of (H.Res. 271) Condemning the Trump Administration’s Legal Campaign to Take Away Americans’ Health Care; and suspension authority.
+Roll: 141
+Question: On Agreeing to the Resolution
+Description: Consideration of (S.J.Res. 7) to direct the removal of the United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress; consideration of (H.Res. 271) Condemning the Trump Administration’s Legal Campaign to Take Away Americans’ Health Care; and suspension authority.
+Roll: 142
+Question: On Motion to Suspend the Rules and Pass
+Description: To designate the facility of the United States Postal Service located at 770 Ayrault Road in Fairport, New York, as the “Louise and Bob Slaughter Post Office”
+Roll: 143
+Question: On Approving the Journal
+Description: 
+Roll: 144
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 1585) to reauthorize the Violence Against Women Act of 1994, and for other purposes
+Roll: 145
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 1585) to reauthorize the Violence Against Women Act of 1994, and for other purposes
+Roll: 146
+Question: On Agreeing to the Resolution
+Description: Condemning the Trump Administration’s Legal Campaign to Take Away Americans’ Health Care
+Roll: 147
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 148
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 149
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 150
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 151
+Question: On Motion to Suspend the Rules and Pass
+Description: To designate the facility of the United States Postal Service located at 1450 Montauk Highway in Mastic, New York, as the “Army Specialist Thomas J. Wilwerth Post Office Building”
+Roll: 152
+Question: On Motion to Commit with Instructions
+Description: To direct the removal of the United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress
+Roll: 153
+Question: On Passage
+Description: To direct the removal of the United States Armed Forces from hostilities in the Republic of Yemen that have not been authorized by Congress
+Roll: 154
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 155
+Question: On Motion to Recommit with Instructions
+Description: Violence Against Women Reauthorization Act
+Roll: 156
+Question: On Passage
+Description: Violence Against Women Reauthorization Act
+Roll: 157
+Question: On Motion to Suspend the Rules and Agree
+Description: Authorizing the use of the Capitol Grounds for the Greater Washington Soap Box Derby
+Roll: 158
+Question: On Motion to Suspend the Rules and Pass
+Description: Local Water Protection Act
+Roll: 159
+Question: On Approving the Journal
+Description: 
+Roll: 160
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 1644, Save the Internet Act; and providing for consideration of H.R. 2021, Investing for the People Act
+Roll: 161
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 1644, Save the Internet Act; and providing for consideration of H.R. 2021, Investing for the People Act
+Roll: 162
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Building on Reemployment Improvements to Deliver Good Employment for Workers Act
+Roll: 163
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 164
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 165
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 166
+Question: On Motion to Recommit with Instructions
+Description: Save the Internet Act
+Roll: 167
+Question: On Passage
+Description: Save the Internet Act
+Roll: 168
+Question: On Motion to Suspend the Rules and Pass
+Description: Columbia River In-Lieu and Treaty Fishing Access Sites Improvement Act
+Roll: 169
+Question: On Approving the Journal
+Description: 
+Roll: 170
+Question: On Motion to Suspend the Rules and Pass
+Description: National Senior Investor Initiative Act
+Roll: 171
+Question: On Motion to Suspend the Rules and Agree
+Description: Supporting the protection of elders through financial literacy
+Roll: 172
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 9) to direct the President to develop a plan for the United States to meet its nationally determined contribution under the Paris Agreement, and for other purposes
+Roll: 173
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 9) to direct the President to develop a plan for the United States to meet its nationally determined contribution under the Paris Agreement, and for other purposes
+Roll: 174
+Question: On Motion to Table
+Description: Raising a question of the privileges of the House
+Roll: 175
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 176
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 177
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 178
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 179
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 180
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 181
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 182
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 183
+Question: On Motion to Recommit with Instructions
+Description: Climate Action Now Act
+Roll: 184
+Question: On Passage
+Description: Climate Action Now Act
+Roll: 185
+Question: On Motion to Suspend the Rules and Agree
+Description: Reaffirming the United States commitment to Taiwan and to the implementation of the Taiwan Relations Act
+Roll: 186
+Question: On Motion to Suspend the Rules and Pass
+Description: Championing American Business Through Diplomacy Act
+Roll: 187
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Orange Book Transparency Act
+Roll: 188
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Purple Book Continuity Act
+Roll: 189
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 986) Protecting Americans with Preexisting Conditions Act, and providing for consideration of the bill (H.R. 2157) making supplemental appropriations for fiscal year ending September 30, 2019, and for other purposes
+Roll: 190
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 986) Protecting Americans with Preexisting Conditions Act, and providing for consideration of the bill (H.R. 2157) making supplemental appropriations for fiscal year ending September 30, 2019, and for other purposes
+Roll: 191
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 192
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 193
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 194
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 195
+Question: On Motion to Recommit with Instructions
+Description: Protecting Americans with Preexisting Conditions Act
+Roll: 196
+Question: On Passage
+Description: Protecting Americans with Preexisting Conditions Act
+Roll: 197
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 198
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 199
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 200
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 201
+Question: On Motion to Recommit with Instructions
+Description: Making supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 202
+Question: On Passage
+Description: Making supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 203
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Blue Water Navy Vietnam Veterans Act
+Roll: 204
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: To reauthorize the Bulletproof Vest Partnership Grant Program.
+Roll: 205
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 5) Equality Act, providing for consideration of the bill (H.R. 312) Mashpee Wampanoag Tribe Reservation Reaffirmation Act, and providing for consideration of (H.R. 987) Strengthening Health Care and Lowering Prescription Drug Costs Act
+Roll: 206
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 5) Equality Act, providing for consideration of the bill (H.R. 312) Mashpee Wampanoag Tribe Reservation Reaffirmation Act, and providing for consideration of (H.R. 987) Strengthening Health Care and Lowering Prescription Drug Costs Act
+Roll: 207
+Question: On Passage
+Description: Mashpee Wampanoag Tribe Reservation Reaffirmation Act
+Roll: 208
+Question: On Motion to Suspend the Rules and Pass
+Description: To amend the Act of June 18, 1934, to reaffirm the authority of the Secretary of the Interior to take land into trust for Indian Tribes, and for other purposes
+Roll: 209
+Question: On Motion to Suspend the Rules and Pass
+Description: Quadrennial Homeland Security Review Technical Corrections Act
+Roll: 210
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 211
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 212
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 213
+Question: On Motion to Recommit with Instructions
+Description: MORE Health Education Act
+Roll: 214
+Question: On Passage
+Description: MORE Health Education Act
+Roll: 215
+Question: On Approving the Journal
+Description: 
+Roll: 216
+Question: On Motion to Recommit with Instructions
+Description: Equality Act
+Roll: 217
+Question: On Passage
+Description: Equality Act
+Roll: 218
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Intercountry Adoption Information Act
+Roll: 219
+Question: On Motion to Suspend the Rules and Agree
+Description: Denouncing female genital mutilation/cutting as a violation of the human rights of women and girls and urging the international community and the Federal Government to increase efforts to eliminate the harmful practice
+Roll: 220
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 1500) Consumers First Act, providing for consideration of the bill (H.R. 1994) Setting Every Community Up for Retirement Enhancement Act, and providing for proceedings during the period from May 24, 2019, through May 31, 2019, and for other purposes.
+Roll: 221
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 1500) Consumers First Act, providing for consideration of the bill (H.R. 1994) Setting Every Community Up for Retirement Enhancement Act, and providing for proceedings during the period from May 24, 2019, through May 31, 2019, and for other purposes.
+Roll: 222
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 223
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 224
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 225
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 226
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 227
+Question: On Motion to Recommit with Instructions
+Description: Consumers First Act
+Roll: 228
+Question: On Passage
+Description: Consumers First Act
+Roll: 229
+Question: On Approving the Journal
+Description: 
+Roll: 230
+Question: On Motion to Recommit with Instructions
+Description: Setting Every Community Up for Retirement Enhancement Act
+Roll: 231
+Question: On Passage
+Description: Setting Every Community Up for Retirement Enhancement Act
+Roll: 232
+Question: On Motion to Suspend the Rules and Concur in the Senate Amendment
+Description: Making supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 233
+Question: On Motion to Suspend the Rules and Pass
+Description: To extend the program of block grants to States for temporary assistance for needy families and related programs through September 30, 2019
+Roll: 234
+Question: On Approving the Journal
+Description: 
+Roll: 235
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 6) to authorize the cancellation of removal and adjustment of status of certain aliens, and for other purposes
+Roll: 236
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 6) to authorize the cancellation of removal and adjustment of status of certain aliens, and for other purposes
+Roll: 237
+Question: On Approving the Journal
+Description: 
+Roll: 238
+Question: On Motion to Suspend the Rules and Agree, as Amended
+Description: Remembering the victims of the violent suppression of democracy protests in Tiananmen Square and elsewhere in China on June 3 and 4, 1989, and calling on the Government of the People’s Republic of China to respect the universally recognized human rights of all people living in China and around the world
+Roll: 239
+Question: On Motion to Recommit with Instructions
+Description: American Dream and Promise Act
+Roll: 240
+Question: On Passage
+Description: American Dream and Promise Act
+Roll: 241
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Ocean Acidification Innovation Act
+Roll: 242
+Question: On Motion to Suspend the Rules and Pass
+Description: Supporting Research and Development for First Responders Act
+Roll: 243
+Question: On Motion to Suspend the Rules and Pass
+Description: Strengthening Local Transportation Security Capabilities Act
+Roll: 244
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: DHS Overseas Personnel Enhancement Act
+Roll: 245
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 2740 and H. Res. 430
+Roll: 246
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 2740 and H. Res. 430
+Roll: 247
+Question: On Agreeing to the Resolution
+Description: Authorizing the Committee on the Judiciary to initiate or intervene in judicial proceedings to enforce certain subpoenas and for other purposes
+Roll: 248
+Question: On Motion to Suspend the Rules and Pass
+Description: DHS Acquisition Review Board Act
+Roll: 249
+Question: On Motion to Adjourn
+Description: 
+Roll: 250
+Question: On Motion to Adjourn
+Description: 
+Roll: 251
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 252
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 253
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 254
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 255
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 256
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 257
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 258
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 259
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 260
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 261
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 262
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 263
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 264
+Question: On Ordering the Previous Question
+Description: Providing for further consideration of the bill (H.R. 2740) Departments of Labor, Health and Human Services, and Education, and Related Agencies Appropriations Act, 2020
+Roll: 265
+Question: On Agreeing to the Resolution
+Description: Providing for further consideration of the bill (H.R. 2740) Departments of Labor, Health and Human Services, and Education, and Related Agencies Appropriations Act, 2020
+Roll: 266
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 267
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 268
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 269
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 270
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 271
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 272
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 273
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 274
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 275
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 276
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 277
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 278
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 279
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 280
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 281
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 282
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 283
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 284
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 285
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 286
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 287
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 288
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 289
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 290
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 291
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 292
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 293
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 294
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 295
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 296
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 297
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 298
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 299
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 300
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 301
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 302
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 303
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 304
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 305
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 306
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 307
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 308
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 309
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 310
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 311
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 312
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 313
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 314
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 315
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 316
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 317
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 318
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 319
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 320
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 321
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 322
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 323
+Question: On Motion that the Committee Rise
+Description: Making appropriations for the Departments of Labor, Health and Human Services, and Education, and related agencies for the fiscal year ending September 30, 2020, and for other purposes
+Roll: 324
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 325
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 326
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 327
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 328
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 329
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 330
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 331
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 332
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 333
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Empowering Beneficiaries, Ensuring Access, and Strengthening Accountability Act
+Roll: 334
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 335
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 336
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 337
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 338
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 339
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 340
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 341
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 342
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 343
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 344
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 345
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 346
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 347
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 348
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 349
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 350
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 351
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 352
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 353
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 354
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 355
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 356
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 3055, relating to consideration of H.R. 2740, and providing for proceedings during the period from June 28, 2019, through July 8, 2019
+Roll: 357
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 3055, relating to consideration of H.R. 2740, and providing for proceedings during the period from June 28, 2019, through July 8, 2019
+Roll: 358
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 359
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 360
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 361
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 362
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 363
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 364
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 365
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 366
+Question: On Motion to Recommit
+Description: Making appropriations for the Departments of Labor, Health and Human Services, and Education, and related agencies for the fiscal year ending September 30, 2020, and for other purposes
+Roll: 367
+Question: On Passage
+Description: Making appropriations for the Departments of Labor, Health and Human Services, and Education, and related agencies for the fiscal year ending September 30, 2020, and for other purposes
+Roll: 368
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 369
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 370
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 371
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 372
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 373
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 374
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 375
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 376
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 377
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 378
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 379
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 380
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 381
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 382
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 383
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 384
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 385
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 386
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 387
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 388
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 389
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 390
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 391
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 392
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 393
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 394
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 395
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 396
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 397
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 398
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 399
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 400
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 401
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 402
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 403
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 2722, waiving a requirement of clause 6(a) of rule XIII with respect to consideration of certain resolutions reported from the Committee on Rules, and providing for consideration of H.R. 3351
+Roll: 404
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 2722, waiving a requirement of clause 6(a) of rule XIII with respect to consideration of certain resolutions reported from the Committee on Rules, and providing for consideration of H.R. 3351
+Roll: 405
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 406
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 407
+Question: On Motion to Recommit with Instructions
+Description: Making appropriations for the Departments of Commerce and Justice, Science, and Related Agencies for the fiscal year ending September 30, 2020, and for other purposes
+Roll: 408
+Question: On Passage
+Description: Making appropriations for the Departments of Commerce and Justice, Science, and Related Agencies for the fiscal year ending September 30, 2020, and for other purposes
+Roll: 409
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 3401) making emergency supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 410
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 3401) making emergency supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 411
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 412
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 413
+Question: On Motion to Recommit with Instructions
+Description: Making emergency supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 414
+Question: On Passage
+Description: Making emergency supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 415
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 416
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 417
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 418
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 419
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 420
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 421
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 422
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 423
+Question: On Motion to Recommit with Instructions
+Description: Making appropriations for financial services and general government for the fiscal year ending September 30, 2020, and for other purposes
+Roll: 424
+Question: On Passage
+Description: Making appropriations for financial services and general government for the fiscal year ending September 30, 2020, and for other purposes
+Roll: 425
+Question: On Consideration of the Resolution
+Description: Providing for consideration of the Senate amendment to the bill (H.R. 3401) making emergency supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 426
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the Senate amendment to the bill (H.R. 3401) making emergency supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 427
+Question: On Motion to Recommit with Instructions
+Description: SAFE Act
+Roll: 428
+Question: On Passage
+Description: SAFE Act
+Roll: 429
+Question: On Motion to Concur in the Senate Amendment
+Description: Making emergency supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes
+Roll: 430
+Question: On Approving the Journal
+Description: 
+Roll: 431
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Whistleblower Protection Reform Act
+Roll: 432
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Expanding Investment in Small Businesses Act
+Roll: 433
+Question: On Motion to Suspend the Rules and Pass
+Description: Expanding Access to Capital for Rural Job Creators Act
+Roll: 434
+Question: On Ordering the Previous Question on the Amendment and the Resolution
+Description: Providing for consideration of H.R. 2500, the National Defense Authorization Act for Fiscal Year 2020, and providing for consideration of motions to suspend the rules
+Roll: 435
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 436
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 2500, the National Defense Authorization Act for Fiscal Year 2020, and providing for consideration of motions to suspend the rules
+Roll: 437
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Fairness for High-Skilled Immigrants Act
+Roll: 438
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 439
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 440
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 441
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 442
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 443
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 444
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 445
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 446
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 447
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 448
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 449
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 450
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 451
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 452
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 453
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 454
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 455
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 456
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 457
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 458
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 459
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 460
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 461
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 462
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 463
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 464
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 465
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 466
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 467
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 468
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 469
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 470
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 471
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 472
+Question: On Motion to Recommit with Instructions
+Description: National Defense Authorization Act for Fiscal Year 2020
+Roll: 473
+Question: On Passage
+Description: National Defense Authorization Act for Fiscal Year 2020
+Roll: 474
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Never Forget the Heroes: James Zadroga, Ray Pfeifer, and Luis Alvarez Permanent Authorization of the September 11th Victim Compensation Fund Act
+Roll: 475
+Question: On Motion to Suspend the Rules and Pass
+Description: USAID Branding Modernization Act
+Roll: 476
+Question: On Motion to Suspend the Rules and Agree, as Amended
+Description: Condemning the attacks on peaceful protesters and supporting an immediate peaceful transition to a civilian-led democratic government in Sudan
+Roll: 477
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Saudi Arabia Human Rights and Accountability Act
+Roll: 478
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 3494, relating to the consideration of House Report 116-125 and an accompanying resolution, relating to the consideration of measures disapproving of sales, exports, or approvals pursuant to the Arms Export Control Act, and providing for consideration of H. Res. 489
+Roll: 479
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 3494, relating to the consideration of House Report 116-125 and an accompanying resolution, relating to the consideration of measures disapproving of sales, exports, or approvals pursuant to the Arms Export Control Act, and providing for consideration of H. Res. 489
+Roll: 480
+Question: On Motion to Strike Words from the Record
+Description: Condemning President Trump’s racist comments directed at Members of Congress
+Roll: 481
+Question: On Motion to Proceed in Order
+Description: Condemning President Trump’s racist comments directed at Members of Congress
+Roll: 482
+Question: On Agreeing to the Resolution
+Description: Condemning President Trump’s racist comments directed at Members of Congress
+Roll: 483
+Question: On Motion to Table
+Description: Impeaching Donald John Trump, President of the United States, of high misdemeanors
+Roll: 484
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 582) to provide for increases in the Federal minimum wage, and for other purposes
+Roll: 485
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 582) to provide for increases in the Federal minimum wage, and for other purposes
+Roll: 486
+Question: On Passage
+Description: Providing for congressional disapproval of the proposed transfer to the Kingdom of Saudi Arabia, the United Kingdom of Great Britain, and Northern Ireland, the Kingdom of Spain, and the Italian Republic of certain defense articles and services
+Roll: 487
+Question: On Passage
+Description: Providing for congressional disapproval of the proposed export to the United Arab Emirates, the United Kingdom of Great Britain and Northern Ireland, and the Republic of France of certain defense articles and services
+Roll: 488
+Question: On Passage
+Description: Providing for congressional disapproval of the proposed export to the Kingdom of Saudi Arabia and the United Kingdom of Great Britain and Northern Ireland of certain defense articles and services
+Roll: 489
+Question: On Agreeing to the Resolution
+Description: Recommending that the House of Representatives find William P. Barr, Attorney General of the United States, and Wilbur L. Ross, Jr., Secretary of Commerce, In Contempt of Congress for Refusal to Comply with Subpoenas Duly Issued by the Committee on Oversight and Reform
+Roll: 490
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 491
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 492
+Question: On Passage
+Description: To authorize appropriations for fiscal year 2020 for intelligence and intelligence-related activities of the United States Government, the Community Management Account, and the Central Intelligence Agency Retirement and Disability System, and for other purposes
+Roll: 493
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Middle Class Health Benefits Tax Repeal Act
+Roll: 494
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 495
+Question: On Motion to Recommit with Instructions
+Description: Raise the Wage Act
+Roll: 496
+Question: On Passage
+Description: Raise the Wage Act
+Roll: 497
+Question: On Motion to Suspend the Rules and Agree, as Amended
+Description: Opposing efforts to delegitimize the State of Israel and the Global Boycott, Divestment, and Sanctions Movement targeting Israel
+Roll: 498
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Venezuela TPS Act
+Roll: 499
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: To exempt for an additional 4-year period, from the application of the means-test presumption of abuse under chapter 7, qualifying members of reserve components of the Armed Forces and members of the National Guard who, after September 11, 2001, are called to active duty or to perform a homeland defense activity
+Roll: 500
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 397) Rehabilitation for Multiemployer Pensions Act of 2019; providing for consideration of the bill (H.R. 3239) Humanitarian Standards for Individuals in Customs and Border Protection Custody Act; and providing for proceedings from July 29, 2019 through September 6, 2019
+Roll: 501
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 397) Rehabilitation for Multiemployer Pensions Act of 2019; providing for consideration of the bill (H.R. 3239) Humanitarian Standards for Individuals in Customs and Border Protection Custody Act; and providing for proceedings from July 29, 2019 through September 6, 2019
+Roll: 502
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Stopping Bad Robocalls Act
+Roll: 503
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 504
+Question: On Motion to Recommit with Instructions
+Description: Rehabilitation for Multiemployer Pensions Act
+Roll: 505
+Question: On Passage
+Description: Rehabilitation for Multiemployer Pensions Act
+Roll: 506
+Question: On Motion to Recommit with Instructions
+Description: Humanitarian Standards for Individuals in Customs and Border Protection Custody Act
+Roll: 507
+Question: On Passage
+Description: Humanitarian Standards for Individuals in Customs and Border Protection Custody Act
+Roll: 508
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 3877) the Bipartisan Budget Act of 2019; providing for consideration of the bill (H.R. 549) the Venezuela TPS Act of 2019; and waiving a requirement of clause 6(a) of Rule XIII with respect to consideration of certain resolutions reported from the Committee on Rules
+Roll: 509
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 3877) the Bipartisan Budget Act of 2019; providing for consideration of the bill (H.R. 549) the Venezuela TPS Act of 2019; and waiving a requirement of clause 6(a) of Rule XIII with respect to consideration of certain resolutions reported from the Committee on Rules
+Roll: 510
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: PAST Act
+Roll: 511
+Question: On Passage
+Description: Bipartisan Budget Act
+Roll: 512
+Question: On Agreeing to the Massie of Kentucky Amendment to the Title
+Description: Bipartisan Budget Act
+Roll: 513
+Question: On Motion to Recommit with Instructions
+Description: Venezuela TPS Act
+Roll: 514
+Question: On Passage
+Description: Venezuela TPS Act
+Roll: 515
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Energy Efficient Government Technology Act
+Roll: 516
+Question: On Motion to Suspend the Rules and Pass
+Description: Diesel Emissions Reduction Act
+Roll: 517
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 205) Protecting and Securing Florida’s Coastline Act; providing for consideration of the bill (H.R. 1146) Arctic Cultural and Coastal Plain Protection Act; and providing for consideration of the bill (H.R. 1941) Coastal and Marine Economies Protection Act
+Roll: 518
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 205) Protecting and Securing Florida’s Coastline Act; providing for consideration of the bill (H.R. 1146) Arctic Cultural and Coastal Plain Protection Act; and providing for consideration of the bill (H.R. 1941) Coastal and Marine Economies Protection Act
+Roll: 519
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Homebuyer Assistance Act
+Roll: 520
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 521
+Question: On Passage
+Description: Protecting and Securing Florida’s Coastline Act of 2019
+Roll: 522
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 523
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 524
+Question: On Motion to Recommit with Instructions
+Description: Coastal and Marine Economies Protection Act
+Roll: 525
+Question: On Passage
+Description: Coastal and Marine Economies Protection Act
+Roll: 526
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 527
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 528
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 529
+Question: On Motion to Recommit with Instructions
+Description: Arctic Cultural and Coastal Plain Protection Act
+Roll: 530
+Question: On Passage
+Description: Arctic Cultural and Coastal Plain Protection Act
+Roll: 531
+Question: On Motion to Instruct Conferees
+Description: National Defense Authorization Act for Fiscal Year 2020
+Roll: 532
+Question: On Closing Portions of the Conference
+Description: National Defense Authorization Act for Fiscal Year 2020
+Roll: 533
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 1423) FAIR Act; waiving a requirement of clause 6(a) of rule XIII with respect to consideration of certain resolutions reported from the Committee on Rules; and providing for consideration of motions to suspend the rules
+Roll: 534
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 1423) FAIR Act; waiving a requirement of clause 6(a) of rule XIII with respect to consideration of certain resolutions reported from the Committee on Rules; and providing for consideration of motions to suspend the rules
+Roll: 535
+Question: On Motion to Suspend the Rules and Pass
+Description: Department of Veterans Affairs Expiring Authorities Act
+Roll: 536
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 4378, making continuing appropriations for fiscal year 2020, and for other purposes
+Roll: 537
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 4378, making continuing appropriations for fiscal year 2020, and for other purposes
+Roll: 538
+Question: On Passage
+Description: Making continuing appropriations for fiscal year 2020, and for other purposes
+Roll: 539
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 540
+Question: On Passage
+Description: Forced Arbitration Injustice Repeal Act
+Roll: 541
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: BURMA Act
+Roll: 542
+Question: On Ordering the Previous Question on the Amendment and the Resolution
+Description: Providing for consideration of H.R. 2203, the Homeland Security Improvement Act; H.R. 3525, the US Border Patrol Medical Screening Standards Act ; and H.Res. 576, expressing the sense of the House with respect to the whistleblower complaint of Aug 12, 2019, made to the Inspector General of the Intelligence Community
+Roll: 543
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 2203, the Homeland Security Improvement Act; H.R. 3525, the US Border Patrol Medical Screening Standards Act ; and H.Res. 576, expressing the sense of the House with respect to the whistleblower complaint of Aug 12, 2019, made to the Inspector General of the Intelligence Community
+Roll: 544
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: SAFE Banking Act
+Roll: 545
+Question: On Motion to Recommit with Instructions
+Description: Homeland Security Improvement Act
+Roll: 546
+Question: On Passage
+Description: Homeland Security Improvement Act
+Roll: 547
+Question: On Motion to Table
+Description: Raising a question of the privileges of the House
+Roll: 548
+Question: On Agreeing to the Resolution
+Description: Expressing the sense of the House of Representatives with respect to the whistleblower complaint of August 12, 2019, made to the Inspector General of the Intelligence Community
+Roll: 549
+Question: On Ordering the Previous Question
+Description: Providing for consideration of S.J. Res. 54, relating to a national emergency declared by the President on February 15, 2019
+Roll: 550
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of S.J. Res. 54, relating to a national emergency declared by the President on February 15, 2019
+Roll: 551
+Question: On Motion to Recommit with Instructions
+Description: U.S. Border Patrol Medical Screening Standards Act
+Roll: 552
+Question: On Passage
+Description: U.S. Border Patrol Medical Screening Standards Act
+Roll: 553
+Question: On Passage
+Description: Relating to a national emergency declared by the President on February 15, 2019
+Roll: 554
+Question: On Motion to Suspend the Rules and Pass
+Description: Joint Task Force to Combat Opioid Trafficking Act
+Roll: 555
+Question: On Motion to Table
+Description: Raising a question of the privileges of the House
+Roll: 556
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: To permit the Secretary of Veterans Affairs to establish a grant program to conduct cemetery research and produce educational materials for the Veterans Legacy Program
+Roll: 557
+Question: On Motion to Suspend the Rules and Pass
+Description: Homeless Veteran Families Act
+Roll: 558
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 1815) SEC Disclosure Effectiveness Testing Act, and providing for consideration of the bill (H.R. 3624) Outsourcing Accountability Act
+Roll: 559
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 1815) SEC Disclosure Effectiveness Testing Act, and providing for consideration of the bill (H.R. 3624) Outsourcing Accountability Act
+Roll: 560
+Question: On Motion to Suspend the Rules and Pass
+Description: Opposing the decision to end certain United States efforts to prevent Turkish military operations against Syrian Kurdish forces in Northeast Syria
+Roll: 561
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 562
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 563
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 564
+Question: On Passage
+Description: SEC Disclosure Effectiveness Testing Act
+Roll: 565
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 566
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 567
+Question: On Passage
+Description: Outsourcing Accountability Act of 2019
+Roll: 568
+Question: On Motion to Table
+Description: Raising a question of the privileges of the House
+Roll: 569
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Small Business Development Centers Improvement Act
+Roll: 570
+Question: On Motion to Suspend the Rules and Pass
+Description: SCORE for Small Business Act
+Roll: 571
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 2513) Corporate Transparency Act
+Roll: 572
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 2513) Corporate Transparency Act
+Roll: 573
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 574
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 575
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 576
+Question: On Motion to Recommit with Instructions
+Description: Corporate Transparency Act
+Roll: 577
+Question: On Passage
+Description: Corporate Transparency Act
+Roll: 578
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Copyright Alternative in Small-Claims Enforcement Act of 2019
+Roll: 579
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 4617, the Stopping Harmful Interference in Elections for a Lasting Democracy Act
+Roll: 580
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 4617, the Stopping Harmful Interference in Elections for a Lasting Democracy Act
+Roll: 581
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 582
+Question: On Motion to Recommit with Instructions
+Description: SHIELD Act
+Roll: 583
+Question: On Passage
+Description: SHIELD Act
+Roll: 584
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Debbie Smith Reauthorization Act of 2019
+Roll: 585
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Full Utilization of the Harbor Maintenance Trust Fund Act
+Roll: 586
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Public Disclosure of Drug Discounts and Real-Time Beneficiary Drug Cost Act
+Roll: 587
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H. Res. 296, affirming the United States record on the Armenian Genocide
+Roll: 588
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H. Res. 296, affirming the United States record on the Armenian Genocide
+Roll: 589
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 823, the Colorado Outdoor Recreation and Economy Act; H.R. 1373, the Grand Canyon Centennial Protection Act; H.R. 2181, the Chaco Cultural Heritage Area Protection Act of 2019; providing for proceedings during the period from November 1, 2019 through November 11, 2019
+Roll: 590
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 823, the Colorado Outdoor Recreation and Economy Act; H.R. 1373, the Grand Canyon Centennial Protection Act; H.R. 2181, the Chaco Cultural Heritage Area Protection Act of 2019; providing for proceedings during the period from November 1, 2019 through November 11, 2019
+Roll: 591
+Question: On Agreeing to the Resolution
+Description: Affirming the United States record on the Armenian Genocide
+Roll: 592
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Protect Against Conflict by Turkey Act
+Roll: 593
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 594
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 595
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 596
+Question: On Motion to Recommit with Instructions
+Description: Chaco Cultural Heritage Area Protection Act
+Roll: 597
+Question: On Passage
+Description: Chaco Cultural Heritage Area Protection Act
+Roll: 598
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 599
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 600
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 601
+Question: On Motion to Recommit with Instructions
+Description: Grand Canyon Centennial Protection Act
+Roll: 602
+Question: On Passage
+Description: Grand Canyon Centennial Protection Act
+Roll: 603
+Question: On Ordering the Previous Question
+Description: Directing certain committees to continue their ongoing investigations as part of the existing House of Representatives inquiry into whether sufficient grounds exist for the House of Representatives to exercise its Constitutional power to impeach Donald John Trump, President of the United States of America
+Roll: 604
+Question: On Agreeing to the Resolution
+Description: Directing certain committees to continue their ongoing investigations as part of the existing House of Representatives inquiry into whether sufficient grounds exist for the House of Representatives to exercise its Constitutional power to impeach Donald John Trump, President of the United States of America
+Roll: 605
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 606
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 607
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 608
+Question: On Motion to Recommit with Instructions
+Description: Colorado Outdoor Recreation and Economy Act
+Roll: 609
+Question: On Passage
+Description: Colorado Outdoor Recreation and Economy Act
+Roll: 610
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: GI Bill Planning Act
+Roll: 611
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Deborah Sampson Act
+Roll: 612
+Question: On Motion to Suspend the Rules and Pass
+Description: Veteran Entrepreneurship Training Act
+Roll: 613
+Question: On Motion to Suspend the Rules and Pass
+Description: Service-Disabled Veterans Small Business Continuation Act
+Roll: 614
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: SERV Act
+Roll: 615
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 4863, the United States Export Finance Agency Act of 2019; and for other purposes
+Roll: 616
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 4863, the United States Export Finance Agency Act of 2019; and for other purposes
+Roll: 617
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 618
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 619
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 620
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 621
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 622
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 623
+Question: On Motion to Recommit with Instructions
+Description: United States Export Finance Agency Act
+Roll: 624
+Question: On Passage
+Description: United States Export Finance Agency Act
+Roll: 625
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Reforming Disaster Recovery Act
+Roll: 626
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Terrorism Risk Insurance Program Reauthorization Act
+Roll: 627
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Investor Protection and Capital Markets Fairness Act
+Roll: 628
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the Senate amendment to the bill (H.R. 3055) making appropriations for the Departments of Commerce and Justice, Science, and Related Agencies for the fiscal year ending September 30, 2020, and for other purposes
+Roll: 629
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the Senate amendment to the bill (H.R. 3055) making appropriations for the Departments of Commerce and Justice, Science, and Related Agencies for the fiscal year ending September 30, 2020, and for other purposes
+Roll: 630
+Question: On Motion to Suspend the Rules and Pass
+Description: Improving Corporate Governance Through Diversity Act
+Roll: 631
+Question: On Motion to Concur in the Senate Amendment with an Amendment
+Description: Making appropriations for the Departments of Commerce and Justice, Science, and Related Agencies for the fiscal year ending September 30, 2020, and for other purposes
+Roll: 632
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 1309, the Workplace Violence Prevention for Health Care and Social Service Workers Act; providing for proceedings during the period from November 22, 2019 through December 2, 2019; and providing for consideration of motions to suspend the rules
+Roll: 633
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 1309, the Workplace Violence Prevention for Health Care and Social Service Workers Act; providing for proceedings during the period from November 22, 2019 through December 2, 2019; and providing for consideration of motions to suspend the rules
+Roll: 634
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Shark Fin Sales Elimination Act
+Roll: 635
+Question: On Motion to Suspend the Rules and Pass
+Description: Hong Kong Human Rights and Democracy Act
+Roll: 636
+Question: On Motion to Suspend the Rules and Pass
+Description: To prohibit the commercial export of covered munitions items to the Hong Kong Police Force
+Roll: 637
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 638
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 639
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 640
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 641
+Question: Table Appeal of the Ruling of the Chair
+Description: Workplace Violence Prevention for Heath Care and Social Service Workers Act
+Roll: 642
+Question: On Passage
+Description: Workplace Violence Prevention for Heath Care and Social Service Workers Act
+Roll: 643
+Question: On Motion to Suspend the Rules and Agree
+Description: Disapproving the Russian Federation’s inclusion in future Group of Seven summits until it respects the territorial integrity of its neighbors and adheres to the standards of democratic societies
+Roll: 644
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Uighur Intervention and Global Humanitarian Unified Response Act
+Roll: 645
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 2534, the Insider Trading Prohibition Act; relating to the consideration of H. Con. Res. 77, directing the President pursuant to section 5(c) of the War Powers Resolution to remove United States Armed Forces from hostilities in the Syrian Arab Republic that have not been authorized
+Roll: 646
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 2534, the Insider Trading Prohibition Act; relating to the consideration of H. Con. Res. 77, directing the President pursuant to section 5(c) of the War Powers Resolution to remove United States Armed Forces from hostilities in the Syrian Arab Republic that have not been authorized
+Roll: 647
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Pallone-Thune Telephone Robocall Abuse Criminal Enforcement and Deterrence Act
+Roll: 648
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 649
+Question: On Passage
+Description: Insider Trading Prohibition Act
+Roll: 650
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 4) Voting Rights Advancement Act and providing for consideration of the resolution (H.Res. 326) Expressing the sense of the House of Representatives regarding United States efforts to resolve the Israeli-Palestinian conflict through a negotiated two-state solution
+Roll: 651
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 4) Voting Rights Advancement Act and providing for consideration of the resolution (H.Res. 326) Expressing the sense of the House of Representatives regarding United States efforts to resolve the Israeli-Palestinian conflict through a negotiated two-state solution
+Roll: 652
+Question: On Agreeing to the Resolution
+Description: Expressing the sense of the House of Representatives regarding United States efforts to resolve the Israeli-Palestinian conflict through a negotiated two-state solution
+Roll: 653
+Question: On Motion to Recommit with Instructions
+Description: Voting Rights Advancement Act
+Roll: 654
+Question: On Passage
+Description: Voting Rights Advancement Act
+Roll: 655
+Question: On Motion to Suspend the Rules and Pass
+Description: DHS Opioid Detection Resilience Act
+Roll: 656
+Question: On Motion to Suspend the Rules and Pass
+Description: Synthetic Opioid Exposure Prevention and Training Act
+Roll: 657
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 729) Tribal Coastal Resiliency Act
+Roll: 658
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 729) Tribal Coastal Resiliency Act
+Roll: 659
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: FUTURE Act
+Roll: 660
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 661
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 662
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 663
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 664
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 665
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 666
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 667
+Question: On Passage
+Description: Tribal Coastal Resiliency Act
+Roll: 668
+Question: On Ordering the Previous Question
+Description: Providing for consideration of H.R. 3, the Elijah E. Cummings Lower Drug Costs Now Act; H.R. 5038, the Farm Workforce Modernization Act of 2019; the conference report to accompany S. 1790, the National Defense Authorization Act
+Roll: 669
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of H.R. 3, the Elijah E. Cummings Lower Drug Costs Now Act; H.R. 5038, the Farm Workforce Modernization Act of 2019; the conference report to accompany S. 1790, the National Defense Authorization Act
+Roll: 670
+Question: Table Motion to Reconsider
+Description: Tribal Coastal Resiliency Act
+Roll: 671
+Question: Table Motion to Reconsider
+Description: Providing for consideration of H.R. 3, the Elijah E. Cummings Lower Drug Costs Now Act; H.R. 5038, the Farm Workforce Modernization Act of 2019; the conference report to accompany S. 1790, the National Defense Authorization Act
+Roll: 672
+Question: On Agreeing to the Conference Report
+Description: National Defense Authorization Act for Fiscal Year 2020
+Roll: 673
+Question: On Motion to Recommit with Instructions
+Description: Farm Workforce Modernization Act
+Roll: 674
+Question: On Passage
+Description: Farm Workforce Modernization Act
+Roll: 675
+Question: Table Motion to Reconsider
+Description: Farm Workforce Modernization Act
+Roll: 676
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 677
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 678
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 679
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 680
+Question: On Agreeing to the Amendment
+Description: 
+Roll: 681
+Question: On Motion to Recommit with Instructions
+Description: Elijah E. Cummings Lower Drug Costs Now Act
+Roll: 682
+Question: On Passage
+Description: Elijah E. Cummings Lower Drug Costs Now Act
+Roll: 683
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the Senate amendment to the bill (H.R. 1158), and for other purposes; providing for consideration of the Senate amendment to the bill (H.R. 1865), and for other purposes; and providing for the adoption of the resolution (H. Res. 761)
+Roll: 684
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the Senate amendment to the bill (H.R. 1158), and for other purposes; providing for consideration of the Senate amendment to the bill (H.R. 1865), and for other purposes; and providing for the adoption of the resolution (H. Res. 761)
+Roll: 685
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Identifying Barriers and Best Practices Study Act
+Roll: 686
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Improving Confidence in Veterans’ Care Act
+Roll: 687
+Question: On Motion to Suspend the Rules and Pass
+Description: Miracle Mountain Designation Act
+Roll: 688
+Question: On Motion to Suspend the Rules and Pass, as Amended
+Description: Hazard Eligilbiltiy and Local Projects Act
+Roll: 689
+Question: On Motion to Concur in the Senate Amendment with an Amendment
+Description: National Law Enforcement Museum Commemorative Coin Act
+Roll: 690
+Question: On Motion to Concur in the Senate Amendment with an Amendment
+Description: DHS Cyber Hunt and Incident Response Teams Act
+Roll: 691
+Question: On Motion to Adjourn
+Description: 
+Roll: 692
+Question: On Motion to Table
+Description: Raising a question of the privileges of the House
+Roll: 693
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the resolution (H. Res. 755) impeaching Donald John Trump, President of the United States, for high crimes and misdemeanors
+Roll: 694
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the resolution (H. Res. 755) impeaching Donald John Trump, President of the United States, for high crimes and misdemeanors
+Roll: 695
+Question: On Agreeing to Article I of the Resolution
+Description: Impeaching Donald John Trump, President of the United States, for high crimes and misdemeanors
+Roll: 696
+Question: On Agreeing to Article II of the Resolution
+Description: Impeaching Donald John Trump, President of the United States, for high crimes and misdemeanors
+Roll: 697
+Question: On Ordering the Previous Question
+Description: Providing for consideration of the bill (H.R. 5377) to amend the Internal Revenue Code of 1986 to modify the limitation on deduction of State and local taxes, and for other purposes
+Roll: 698
+Question: On Agreeing to the Resolution
+Description: Providing for consideration of the bill (H.R. 5377) to amend the Internal Revenue Code of 1986 to modify the limitation on deduction of State and local taxes, and for other purposes
+Roll: 699
+Question: On Motion to Recommit with Instructions
+Description: Restoring Tax Fairness for States and Localities Act
+Roll: 700
+Question: On Passage
+Description: Restoring Tax Fairness for States and Localities Act
+Roll: 701
+Question: On Passage
+Description: United States-Mexico-Canada Agreement Implementation Act
