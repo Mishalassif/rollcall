@@ -13,7 +13,7 @@ else:
     congress = 'H115'
 
 data_folder = 'data/'+congress+'/'
-output_folder = 'output/'+congress+'/'+congress+'_'
+output_folder = 'output/raw/'+congress+'/'+congress+'_'
 
 trunc = 2
 
