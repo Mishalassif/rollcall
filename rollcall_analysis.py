@@ -5,11 +5,15 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 from mpl_toolkits.mplot3d import Axes3D
 
+congress = 'H115'
+data_folder = 'data/'+congress+'/'
+output_folder = 'output/'+congress+'/'
+
 trunc = 2
 
 member_count = -1
 member_icpsr = {}
-with open('H115_members.csv') as csv_file:
+with open(data_folder+'H115_members.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         if not (member_count == -1):
@@ -17,7 +21,7 @@ with open('H115_members.csv') as csv_file:
         member_count = member_count + 1
 bill_count = -1
 bill_roll = {}
-with open('H115_rollcalls.csv') as csv_file:
+with open(data_folder+'H115_rollcalls.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         if not bill_count == -1:
@@ -32,7 +36,7 @@ I = np.eye(bill_count)
 
 vote_count = -1
 abstention_count = 0
-with open('H115_votes.csv') as csv_file:
+with open(data_folder+'H115_votes.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         if not vote_count == -1:
@@ -116,7 +120,7 @@ dem_indices = []
 other_indices = []
 party = ['Other' for i in range(0, member_count)]
 name = ['Unknown' for i in range(0, member_count)]
-with open('H115_members.csv') as csv_file:
+with open(data_folder+'H115_members.csv') as csv_file:
     i = -1
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
@@ -140,7 +144,7 @@ result = ['Unkown' for i in range(0, bill_count)]
 passed_indices = []
 failed_indices = []
 undecided_indices = []
-with open('H115_rollcalls.csv') as csv_file:
+with open(data_folder+'H115_rollcalls.csv') as csv_file:
     i = -1
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
@@ -158,12 +162,12 @@ print "Number of Passed bills : " + str(len(passed_indices))
 print "Number of Failed bills : " + str(len(failed_indices))
 print "Number of Undecided bills : " + str(len(undecided_indices))
 
-with open('eigenpoliticians.csv', 'w') as csvfile:
+with open(output_folder+'eigenpoliticians.csv', 'w') as csvfile:
     data = zip(name, party, u[:,0], u[:,1])
     writercsv = csv.writer(csvfile)
     for row in data:
         writercsv.writerow(row)
-with open('eigenpolicies.csv', 'w') as csvfile:
+with open(output_folder+'eigenpolicies.csv', 'w') as csvfile:
     data = zip(result, vh[0,:], vh[1,:])
     writercsv = csv.writer(csvfile)
     for row in data:
