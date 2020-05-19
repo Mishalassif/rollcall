@@ -167,6 +167,14 @@ print "Number of Passed bills : " + str(len(passed_indices))
 print "Number of Failed bills : " + str(len(failed_indices))
 print "Number of Undecided bills : " + str(len(undecided_indices))
 
+polarization = [0 for i in range(0, bill_count)]
+for i in range(0, bill_count):
+    for j in rep_indices:
+        polarization[i] = polarization[i] + A[j][i]
+    for j in dem_indices:
+        polarization[i] = polarization[i] - A[j][i]
+    polarization[i] = abs(polarization[i])
+
 with open(output_folder+'eigenmembers.csv', 'w') as csvfile:
     data = zip(name, party, u[:,0], u[:,1])
     writercsv = csv.writer(csvfile)
@@ -178,36 +186,76 @@ with open(output_folder+'eigenbills.csv', 'w') as csvfile:
     for row in data:
         writercsv.writerow(row)
 
+'''
+Eigenmembers colored by party plot
+'''
 custom_lines = [Line2D([0], [0], color='red', linestyle='None', marker='o'),
                 Line2D([0], [0], color='blue', linestyle='None', marker='o'),
                 Line2D([0], [0], color='green', linestyle='None', marker='o')]
-
 fig, ax = plt.subplots()
-
 ax.legend(custom_lines, ['Republican', 'Democrat', 'Undetermined'])
-
 plt.plot([u[i,0] for i in other_indices], [u[i,1] for i in other_indices], 'go')
 plt.plot([u[i,0] for i in rep_indices], [u[i,1] for i in rep_indices], 'ro')
 plt.plot([u[i,0] for i in dem_indices], [u[i,1] for i in dem_indices], 'bo')
-plt.title("Reduced member space")
+plt.title("Eigenvectors in member space colored by party")
 plt.savefig(output_folder+"eigenmembers.png")
 #plt.show()
+plt.close(fig)
 
+'''
+EVDistributions plot
+'''
+n_bins = 40
+fig, axs = plt.subplots(2, 2, figsize=(20,10))
+plt.title("Distribution of Eigenvectors")
+plt.subplot(2,2,1)
+plt.hist(u[:,0], bins=n_bins)
+plt.xlabel("Largest EV in member space")
+plt.subplot(2,2,2)
+plt.hist(u[:,1], bins=n_bins)
+plt.xlabel("Second largest EV in member space")
+plt.subplot(2,2,3)
+plt.hist(vh[0,:], bins=n_bins)
+plt.xlabel("Largest EV in bill space")
+plt.subplot(2,2,4)
+plt.hist(vh[1,:], bins=n_bins)
+plt.xlabel("Second largest EV in bill space")
+plt.savefig(output_folder+"evdistribution.png")
+#plt.show()
+plt.close(fig)
+
+'''
+Eigenbills colored by polarization
+'''
+colormap = [(float(polarization[i])/max(polarization),0.1,0.1) for i in range(0, bill_count)]
+colormap = [((-0.6*polarization[i])/max(polarization) + 0.9, (-0.6*polarization[i])/max(polarization) + 0.9, (-0.6*polarization[i])/max(polarization) + 0.9) for i in range(0, bill_count)]
+#colormap = [(float(polarization[i])/max(polarization),float(polarization[i])/max(polarization),float(polarization[i])/max(polarization)) for i in range(0, bill_count)]
+fig, ax = plt.subplots()
+plt.scatter(vh[0,:], vh[1,:], c=colormap)
+plt.title("Eigenvectors in bill space colored by polarization")
+plt.savefig(output_folder+"eigenbills_polarized.png")
+#plt.show()
+plt.close(fig)
+
+'''
+Eigenbills colored by pass/fail plot
+'''
 custom_lines = [Line2D([0], [0], color='green', linestyle='None', marker='o'),
                 Line2D([0], [0], color='red', linestyle='None', marker='o'),
                 Line2D([0], [0], color='yellow', linestyle='None', marker='o')]
-
 fig, ax = plt.subplots()
-
 ax.legend(custom_lines, ['Passed', 'Failed', 'Undetermined'])
-
 plt.plot([vh[0,i] for i in undecided_indices], [vh[1,i] for i in undecided_indices], 'yo')
 plt.plot([vh[0,i] for i in passed_indices], [vh[1,i] for i in passed_indices], 'go')
 plt.plot([vh[0,i] for i in failed_indices], [vh[1,i] for i in failed_indices], 'ro')
-plt.title("Reduced bill space")
-plt.savefig(output_folder+"eigenbills.png")
+plt.title("Eigenvectors in bill space colored by result")
+plt.savefig(output_folder+"eigenbills_pf.png")
 #plt.show()
+plt.close(fig)
 
+'''
+Eigenbills colored by pass/fail 3D plot
+'''
 fig = plt.figure()
 ax = Axes3D(fig)
 #ax.scatter([vh[0,i] for i in range(0, bill_count)], [vh[1,i] for i in range(0, bill_count)], [vh[2,i] for i in range(0, bill_count)])
@@ -216,30 +264,4 @@ ax.scatter([vh[0,i] for i in failed_indices], [vh[1,i] for i in failed_indices],
 ax.scatter([vh[0,i] for i in undecided_indices], [vh[1,i] for i in undecided_indices], [vh[2,i] for i in undecided_indices], c='y')
 plt.title("3 Dom. EVs in policy space")
 #plt.show()
-
-n_bins = 40
-
-# We can set the number of bins with the `bins` kwarg
-fig, axs = plt.subplots(2, 2, figsize=(20,10))
-
-plt.title("Distribution of EVs")
-# We can set the number of bins with the `bins` kwarg
-plt.subplot(2,2,1)
-plt.hist(u[:,0], bins=n_bins)
-#plt.title("Distribution of Largest EVs in member space")
-plt.xlabel("Largest EV in member space")
-plt.subplot(2,2,2)
-plt.hist(u[:,1], bins=n_bins)
-#plt.title("Distribution of second largest EVs in member space")
-plt.xlabel("Second largest EV in member space")
-plt.subplot(2,2,3)
-plt.hist(vh[0,:], bins=n_bins)
-#plt.title("Distribution of Largest EVs in bill space")
-plt.xlabel("Largest EV in bill space")
-plt.subplot(2,2,4)
-plt.hist(vh[1,:], bins=n_bins)
-#plt.title("Distribution of second largest EVs in bill space")
-plt.xlabel("Second largest EV in bill space")
-#plt.figure(figsize=(20,10))
-plt.savefig(output_folder+"evdistribution.png")
-#plt.show()
+plt.close(fig)
