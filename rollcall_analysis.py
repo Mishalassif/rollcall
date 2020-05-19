@@ -5,15 +5,21 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 from mpl_toolkits.mplot3d import Axes3D
 
-congress = 'H115'
+import sys
+
+if len(sys.argv) == 2:
+    congress = sys.argv[1]
+else:
+    congress = 'H115'
+
 data_folder = 'data/'+congress+'/'
-output_folder = 'output/'+congress+'/'
+output_folder = 'output/'+congress+'/'+congress+'_'
 
 trunc = 2
 
 member_count = -1
 member_icpsr = {}
-with open(data_folder+'H115_members.csv') as csv_file:
+with open(data_folder+congress+'_members.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         if not (member_count == -1):
@@ -21,7 +27,7 @@ with open(data_folder+'H115_members.csv') as csv_file:
         member_count = member_count + 1
 bill_count = -1
 bill_roll = {}
-with open(data_folder+'H115_rollcalls.csv') as csv_file:
+with open(data_folder+congress+'_rollcalls.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         if not bill_count == -1:
@@ -36,7 +42,7 @@ I = np.eye(bill_count)
 
 vote_count = -1
 abstention_count = 0
-with open(data_folder+'H115_votes.csv') as csv_file:
+with open(data_folder+congress+'_votes.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         if not vote_count == -1:
@@ -59,12 +65,11 @@ for i in range(0, member_count):
     for j in range(0, bill_count):
         yn_vote_count = yn_vote_count + abs(A[i][j])
 
-'''
+print "Fraction of votes : " + str(float(vote_count)/(member_count*bill_count))
 print (yn_vote_count)/vote_count
 print (yn_vote_count)/(member_count*bill_count)
 print (yn_vote_count+abstention_count)/vote_count
 print (yn_vote_count+abstention_count)/(member_count*bill_count)
-'''
 
 u, s, vh = np.linalg.svd(A)
 smat = np.zeros((member_count, bill_count))
@@ -120,7 +125,7 @@ dem_indices = []
 other_indices = []
 party = ['Other' for i in range(0, member_count)]
 name = ['Unknown' for i in range(0, member_count)]
-with open(data_folder+'H115_members.csv') as csv_file:
+with open(data_folder+congress+'_members.csv') as csv_file:
     i = -1
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
@@ -144,7 +149,7 @@ result = ['Unkown' for i in range(0, bill_count)]
 passed_indices = []
 failed_indices = []
 undecided_indices = []
-with open(data_folder+'H115_rollcalls.csv') as csv_file:
+with open(data_folder+congress+'_rollcalls.csv') as csv_file:
     i = -1
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
@@ -162,12 +167,12 @@ print "Number of Passed bills : " + str(len(passed_indices))
 print "Number of Failed bills : " + str(len(failed_indices))
 print "Number of Undecided bills : " + str(len(undecided_indices))
 
-with open(output_folder+'eigenpoliticians.csv', 'w') as csvfile:
+with open(output_folder+'eigenmembers.csv', 'w') as csvfile:
     data = zip(name, party, u[:,0], u[:,1])
     writercsv = csv.writer(csvfile)
     for row in data:
         writercsv.writerow(row)
-with open(output_folder+'eigenpolicies.csv', 'w') as csvfile:
+with open(output_folder+'eigenbills.csv', 'w') as csvfile:
     data = zip(result, vh[0,:], vh[1,:])
     writercsv = csv.writer(csvfile)
     for row in data:
@@ -181,11 +186,12 @@ fig, ax = plt.subplots()
 
 ax.legend(custom_lines, ['Republican', 'Democrat', 'Undetermined'])
 
+plt.plot([u[i,0] for i in other_indices], [u[i,1] for i in other_indices], 'go')
 plt.plot([u[i,0] for i in rep_indices], [u[i,1] for i in rep_indices], 'ro')
 plt.plot([u[i,0] for i in dem_indices], [u[i,1] for i in dem_indices], 'bo')
-plt.plot([u[i,0] for i in other_indices], [u[i,1] for i in other_indices], 'go')
 plt.title("Reduced member space")
-plt.show()
+plt.savefig(output_folder+"eigenmembers.png")
+#plt.show()
 
 custom_lines = [Line2D([0], [0], color='green', linestyle='None', marker='o'),
                 Line2D([0], [0], color='red', linestyle='None', marker='o'),
@@ -195,11 +201,12 @@ fig, ax = plt.subplots()
 
 ax.legend(custom_lines, ['Passed', 'Failed', 'Undetermined'])
 
+plt.plot([vh[0,i] for i in undecided_indices], [vh[1,i] for i in undecided_indices], 'yo')
 plt.plot([vh[0,i] for i in passed_indices], [vh[1,i] for i in passed_indices], 'go')
 plt.plot([vh[0,i] for i in failed_indices], [vh[1,i] for i in failed_indices], 'ro')
-plt.plot([vh[0,i] for i in undecided_indices], [vh[1,i] for i in undecided_indices], 'yo')
 plt.title("Reduced bill space")
-plt.show()
+plt.savefig(output_folder+"eigenbills.png")
+#plt.show()
 
 fig = plt.figure()
 ax = Axes3D(fig)
@@ -208,4 +215,31 @@ ax.scatter([vh[0,i] for i in passed_indices], [vh[1,i] for i in passed_indices],
 ax.scatter([vh[0,i] for i in failed_indices], [vh[1,i] for i in failed_indices], [vh[2,i] for i in failed_indices], c='r')
 ax.scatter([vh[0,i] for i in undecided_indices], [vh[1,i] for i in undecided_indices], [vh[2,i] for i in undecided_indices], c='y')
 plt.title("3 Dom. EVs in policy space")
-plt.show()
+#plt.show()
+
+n_bins = 40
+
+# We can set the number of bins with the `bins` kwarg
+fig, axs = plt.subplots(2, 2, figsize=(20,10))
+
+plt.title("Distribution of EVs")
+# We can set the number of bins with the `bins` kwarg
+plt.subplot(2,2,1)
+plt.hist(u[:,0], bins=n_bins)
+#plt.title("Distribution of Largest EVs in member space")
+plt.xlabel("Largest EV in member space")
+plt.subplot(2,2,2)
+plt.hist(u[:,1], bins=n_bins)
+#plt.title("Distribution of second largest EVs in member space")
+plt.xlabel("Second largest EV in member space")
+plt.subplot(2,2,3)
+plt.hist(vh[0,:], bins=n_bins)
+#plt.title("Distribution of Largest EVs in bill space")
+plt.xlabel("Largest EV in bill space")
+plt.subplot(2,2,4)
+plt.hist(vh[1,:], bins=n_bins)
+#plt.title("Distribution of second largest EVs in bill space")
+plt.xlabel("Second largest EV in bill space")
+#plt.figure(figsize=(20,10))
+plt.savefig(output_folder+"evdistribution.png")
+#plt.show()
