@@ -15,6 +15,13 @@
 #do
 #    mv H0$i* ./H0$i
 #done
+for i in {100..116}
+do
+    cp 'raw/H'$i'/H'$i'_eigenbills_pf.png' ./eigenbills
+    cp 'raw/H'$i'/H'$i'_eigenbills_polarized.png' ./eigenbills
+    cp 'raw/H'$i'/H'$i'_eigenmembers.png' ./eigenmembers
+    cp 'raw/H'$i'/H'$i'_evdistribution.png' ./evdistribution
+done
 
 for i in {95..99}
 do

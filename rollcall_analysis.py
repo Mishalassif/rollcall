@@ -198,14 +198,14 @@ plt.plot([u[i,0] for i in other_indices], [u[i,1] for i in other_indices], 'go')
 plt.plot([u[i,0] for i in rep_indices], [u[i,1] for i in rep_indices], 'ro')
 plt.plot([u[i,0] for i in dem_indices], [u[i,1] for i in dem_indices], 'bo')
 plt.title("Eigenvectors in member space colored by party")
-plt.savefig(output_folder+"eigenmembers.png")
+#plt.savefig(output_folder+"eigenmembers.png")
 #plt.show()
 plt.close(fig)
 
 '''
 EVDistributions plot
 '''
-n_bins = 40
+n_bins = 100
 fig, axs = plt.subplots(2, 2, figsize=(20,10))
 plt.title("Distribution of Eigenvectors")
 plt.subplot(2,2,1)
@@ -233,7 +233,7 @@ colormap = [((-0.6*polarization[i])/max(polarization) + 0.9, (-0.6*polarization[
 fig, ax = plt.subplots()
 plt.scatter(vh[0,:], vh[1,:], c=colormap)
 plt.title("Eigenvectors in bill space colored by polarization")
-plt.savefig(output_folder+"eigenbills_polarized.png")
+#plt.savefig(output_folder+"eigenbills_polarized.png")
 #plt.show()
 plt.close(fig)
 
@@ -249,7 +249,7 @@ plt.plot([vh[0,i] for i in undecided_indices], [vh[1,i] for i in undecided_indic
 plt.plot([vh[0,i] for i in passed_indices], [vh[1,i] for i in passed_indices], 'go')
 plt.plot([vh[0,i] for i in failed_indices], [vh[1,i] for i in failed_indices], 'ro')
 plt.title("Eigenvectors in bill space colored by result")
-plt.savefig(output_folder+"eigenbills_pf.png")
+#plt.savefig(output_folder+"eigenbills_pf.png")
 #plt.show()
 plt.close(fig)
 
