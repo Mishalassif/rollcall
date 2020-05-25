@@ -6,6 +6,7 @@ from matplotlib.lines import Line2D
 from mpl_toolkits.mplot3d import Axes3D
 
 import sys
+import math
 
 if len(sys.argv) == 2:
     congress = sys.argv[1]
@@ -181,11 +182,34 @@ with open(output_folder+'eigenmembers.csv', 'w') as csvfile:
     for row in data:
         writercsv.writerow(row)
 with open(output_folder+'eigenbills.csv', 'w') as csvfile:
-    data = zip(result, vh[0,:], vh[1,:])
+    data = zip(result, vh[0,:], vh[1,:], polarization)
     writercsv = csv.writer(csvfile)
     for row in data:
         writercsv.writerow(row)
 
+multn = [vh[1,i]*sum(A[:,i]) for i in range(0, len(vh[1,:]))]
+multd = [sum(A[:,i])*sum(A[:,i]) for i in range(0, len(vh[1,:]))]
+a = sum(multn)*sum(multn)/sum(multd)
+multd = [vh[1,i]*vh[1,i] for i in range(0, len(vh[1,:]))]
+a = a/sum(multd)
+a = math.sqrt(a)
+print "a : " + str(a)
+
+multn = [vh[0,i]*(sum(A[rep_indices,i])-sum(A[dem_indices,i])) for i in range(0, len(vh[1,:]))]
+multd = [(sum(A[rep_indices,i])-sum(A[dem_indices,i]))*(sum(A[rep_indices,i])-sum(A[dem_indices,i])) for i in range(0, len(vh[1,:]))]
+b = sum(multn)*sum(multn)/sum(multd)
+multd = [vh[0,i]*vh[0,i] for i in range(0, len(vh[1,:]))]
+b = b/sum(multd) 
+b = math.sqrt(b)
+print "b : " + str(b)
+
+multn = [vh[1,i]*(sum(A[rep_indices,i])-sum(A[dem_indices,i])) for i in range(0, len(vh[1,:]))]
+multd = [(sum(A[rep_indices,i])-sum(A[dem_indices,i]))*(sum(A[rep_indices,i])-sum(A[dem_indices,i])) for i in range(0, len(vh[1,:]))]
+b = sum(multn)*sum(multn)/sum(multd)
+multd = [vh[1,i]*vh[1,i] for i in range(0, len(vh[1,:]))]
+b = b/sum(multd) 
+b = math.sqrt(b)
+print "b : " + str(b)
 '''
 Eigenmembers colored by party plot
 '''
@@ -220,7 +244,7 @@ plt.xlabel("Largest EV in bill space")
 plt.subplot(2,2,4)
 plt.hist(vh[1,:], bins=n_bins)
 plt.xlabel("Second largest EV in bill space")
-plt.savefig(output_folder+"evdistribution.png")
+#plt.savefig(output_folder+"evdistribution.png")
 #plt.show()
 plt.close(fig)
 
@@ -265,3 +289,5 @@ ax.scatter([vh[0,i] for i in undecided_indices], [vh[1,i] for i in undecided_ind
 plt.title("3 Dom. EVs in policy space")
 #plt.show()
 plt.close(fig)
+
+
