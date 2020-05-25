@@ -15,6 +15,7 @@ else:
 
 data_folder = 'output/raw/'+congress+'/'+congress+'_'
 output_folder = 'output/raw/'+congress+'/'+congress+'_'
+hd_file = 'output/house_details.csv'
 
 eigenbills = []
 result = []
@@ -32,9 +33,31 @@ with open(data_folder+'eigenbills.csv') as csv_file:
         rep_vote.append(float(row[5]))
         dem_vote.append(float(row[6]))
 bill_count = len(eigenbills)
+eigenmembers = []
+party = []
+with open(data_folder+'eigenmembers.csv') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
+    for row in csv_reader:
+        eigenmembers.append(map(float, row[2:4]))
+        party.append(row[1])
+
+ev_1 = 0
+ev_2 = 0
+num_reps = 0
+num_dems = 0
+
+with open(hd_file) as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
+    for row in csv_reader:
+        if row[0] == congress:
+            ev_1 = float(row[1])
+            ev_2 = float(row[2])
+            num_reps = float(row[3])
+            num_dems = float(row[4])
 
 eps = 0.01
-def proj_span(theta, phi):
+
+def proj_span_x(theta, phi):
     A = np.matrix([[math.cos(theta), math.cos(phi)],[math.sin(theta), math.sin(phi)]])
     if abs(np.linalg.det(A)) < eps:
         return 10000
@@ -42,7 +65,7 @@ def proj_span(theta, phi):
     c = [eigenbills[i][0]*Ainv_1[0,0]+eigenbills[i][1]*Ainv_1[0,1] for i in range(0, bill_count)]
     return max(c)-min(c)
 
-def proj_span_2(rho):
+def proj_span_y(rho):
     if abs(math.tan(rho)) < eps:
         return 10000
     Ainv_2 = np.matrix([[1, 0],[1,-1/math.tan(rho)]])
@@ -50,7 +73,8 @@ def proj_span_2(rho):
     return max(c)-min(c)
 
 N=50
-graph = [[proj_span(i*math.pi/N,j*math.pi/N) for i in range(0,N)] for j in range(0,N)]
+
+graph = [[proj_span_x(i*math.pi/N,j*math.pi/N) for i in range(0,N)] for j in range(0,N)]
 minval = min([min(graph[i][:]) for i in range(0,N)])
 argmin = []
 for i in range(0,N):
@@ -63,7 +87,8 @@ A = np.matrix([[math.cos(theta), math.cos(phi)],[math.sin(theta), math.sin(phi)]
 Ainv = np.matrix([[math.sin(phi), -math.cos(phi)],[-math.sin(theta), math.cos(theta)]])/np.linalg.det(A)
 x = [Ainv[0,0]*eigenbills[i][0] + Ainv[0,1]*eigenbills[i][1] for i in range(0, bill_count)]
 y = [Ainv[1,0]*eigenbills[i][0] + Ainv[1,1]*eigenbills[i][1] for i in range(0, bill_count)]
-graph = [proj_span_2(i*math.pi/N) for i in range(0,N)]
+
+graph = [proj_span_y(i*math.pi/N) for i in range(0,N)]
 minval = min(graph)
 argmin = []
 for i in range(0,N):
@@ -73,13 +98,22 @@ rho = argmin[0]*math.pi/N
 B = np.matrix([[1, -math.cos(rho)/math.sin(rho)],[0, 1/math.sin(rho)]])
 x2 = [B[0,0]*x[i] + B[0,1]*y[i] for i in range(0, bill_count)]
 y2 = [B[1,0]*x[i] + B[1,1]*y[i] for i in range(0, bill_count)]
+
+scalex = max(max(x2),-min(x2))
+scaley = max(max(y2),-min(y2))
+
+x2 = [x2[i]/scalex for i in range(0, bill_count)]
+y2 = [y2[i]/scaley for i in range(0, bill_count)]
+
+scale = np.matrix([[1/scalex, 0],[0,1/scaley]])
 print "Squaring linear transformation :"
-print B*Ainv
+print scale*B*Ainv
 with open(output_folder+'eigenbills_squared.csv', 'w') as csvfile:
     data = zip(x2, y2)
     writercsv = csv.writer(csvfile)
     for row in data:
         writercsv.writerow(row)
+
 passed_indices = []
 failed_indices = []
 undecided_indices = []
@@ -120,17 +154,19 @@ plt.title("Eigenvectors in bill space colored by polarization")
 #plt.show()
 plt.close(fig)
 
-mx = 0
-my = 0
+mxr = 0
+myr = 0
+mxd = 0
+myd = 0
 sq_r = 0
 sq_d = 0
 sq_x = 0
 sq_y = 0
 for i in range(0, bill_count):
-    #mx = mx + x2[i]*dem_vote[i]
-    mx = mx + x2[i]*rep_vote[i]
-    #my = my + y2[i]*rep_vote[i]
-    my = my + y2[i]*dem_vote[i]
+    mxd = mxd + x2[i]*dem_vote[i]
+    mxr = mxr + x2[i]*rep_vote[i]
+    myr = myr + y2[i]*rep_vote[i]
+    myd = myd + y2[i]*dem_vote[i]
     sq_r = sq_r + rep_vote[i]*rep_vote[i]
     sq_d = sq_d + dem_vote[i]*dem_vote[i]
     sq_x = sq_x + x2[i]*x2[i]
@@ -141,20 +177,29 @@ sq_d = math.sqrt(sq_d)
 sq_x = math.sqrt(sq_x)
 sq_y = math.sqrt(sq_y)
 
-#print mx/(sq_d*sq_x)
-print mx/(sq_r*sq_x)
-#print my/(sq_r*sq_y)
-print my/(sq_d*sq_y)
+if abs(mxd/(sq_d*sq_x)) < abs(myd/(sq_d*sq_y)):
+    multd = myd/(sq_d*sq_d)
+    multr = mxr/(sq_r*sq_r)
+    dem_ax = y2
+    rep_ax = x2
+else:
+    multd = mxd/(sq_d*sq_d)
+    multr = myr/(sq_r*sq_r)
+    dem_ax = x2
+    rep_ax = y2
 
-#multx = mx/(sq_d*sq_d)
-multx = mx/(sq_r*sq_r)
-#multy = my/(sq_r*sq_r)
-multy = my/(sq_d*sq_d)
-print "Approx. republicans : " + str((max(x2)-min(x2))/(2*multx))
-print "Approx. democrats : " + str((max(y2)-min(y2))/(2*multy))
+app_num_reps = abs((max(rep_ax)-min(rep_ax))/(2*multr))
+app_num_dems = abs((max(dem_ax)-min(dem_ax))/(2*multd))
+print "Approx. republicans : " + str(app_num_reps)
+print "Actual republicans : " + str(num_reps)
+print "Approx. democrats : " + str(app_num_dems)
+print "Actual democrats : " + str(num_dems)
 
-#plt.plot([multx*dem_vote[i] for i in range(0, bill_count)], [multy*rep_vote[i] for i in range(0, bill_count)], 'go')
-#plt.plot([multx*rep_vote[i] for i in range(0, bill_count)], [multy*dem_vote[i] for i in range(0, bill_count)], 'go')
-#plt.plot(x2, y2, 'yo')
+plt.plot([multd*dem_vote[i] for i in range(0, bill_count)], [multr*rep_vote[i] for i in range(0, bill_count)], 'go')
+plt.plot(dem_ax, rep_ax, 'yo')
+plt.xlabel("Democratic axis")
+plt.ylabel("Republican axis")
 #plt.savefig(output_folder+"eigenbills_squared_comparison.png")
-#plt.show()
+plt.show()
+
+

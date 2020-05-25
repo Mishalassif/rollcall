@@ -15,7 +15,7 @@ else:
 
 data_folder = 'data/'+congress+'/'
 output_folder = 'output/raw/'+congress+'/'+congress+'_'
-
+hd_file = 'output/house_details.csv'
 trunc = 2
 
 member_count = -1
@@ -145,6 +145,11 @@ with open(data_folder+congress+'_members.csv') as csv_file:
 print "Number of Republicans : " + str(len(rep_indices))
 print "Number of Democrats : " + str(len(dem_indices))
 print "Number of Others : " + str(len(other_indices))
+
+with open(hd_file,'a') as csvfile:
+    writercsv = csv.writer(csvfile)
+    myCsvRow = [congress, str(s[0]), str(s[1]), str(len(rep_indices)), str(len(dem_indices)), str(len(other_indices))]
+    writercsv.writerow(myCsvRow)
 
 result = ['Unkown' for i in range(0, bill_count)]
 passed_indices = []
