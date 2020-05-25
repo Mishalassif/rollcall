@@ -40,6 +40,7 @@ with open(data_folder+'eigenmembers.csv') as csv_file:
     for row in csv_reader:
         eigenmembers.append(map(float, row[2:4]))
         party.append(row[1])
+member_count = len(eigenmembers)
 
 ev_1 = 0
 ev_2 = 0
@@ -106,6 +107,7 @@ x2 = [x2[i]/scalex for i in range(0, bill_count)]
 y2 = [y2[i]/scaley for i in range(0, bill_count)]
 
 scale = np.matrix([[1/scalex, 0],[0,1/scaley]])
+lt_final = scale*B*Ainv
 print "Squaring linear transformation :"
 print scale*B*Ainv
 with open(output_folder+'eigenbills_squared.csv', 'w') as csvfile:
@@ -124,6 +126,17 @@ for i in range(0, bill_count):
         failed_indices.append(i)
     else:
         undecided_indices.append(i)
+
+dem_indices = []
+rep_indices = []
+other_indices = []
+for i in range(0, member_count):
+    if party[i].lower() == "democrat":
+        dem_indices.append(i)
+    elif party[i].lower() == "republican":
+        rep_indices.append(i)
+    else:
+        other_indices.append(i)
 
 '''
 Eigenbills colored by pass/fail plot
@@ -177,16 +190,21 @@ sq_d = math.sqrt(sq_d)
 sq_x = math.sqrt(sq_x)
 sq_y = math.sqrt(sq_y)
 
+memspace_lt = lt_final*np.matrix([[1/ev_1,0],[0,1/ev_2]])
 if abs(mxd/(sq_d*sq_x)) < abs(myd/(sq_d*sq_y)):
     multd = myd/(sq_d*sq_d)
     multr = mxr/(sq_r*sq_r)
     dem_ax = y2
     rep_ax = x2
+    dem_ax_m = [memspace_lt[1,0]*eigenmembers[i][0]+memspace_lt[1,1]*eigenmembers[i][1] for i in range(0, member_count)]
+    rep_ax_m = [memspace_lt[0,0]*eigenmembers[i][0]+memspace_lt[0,1]*eigenmembers[i][1] for i in range(0, member_count)]
 else:
     multd = mxd/(sq_d*sq_d)
     multr = myr/(sq_r*sq_r)
     dem_ax = x2
     rep_ax = y2
+    dem_ax_m = [memspace_lt[0,0]*eigenmembers[i][0]+memspace_lt[0,1]*eigenmembers[i][1] for i in range(0, member_count)]
+    rep_ax_m = [memspace_lt[1,0]*eigenmembers[i][0]+memspace_lt[1,1]*eigenmembers[i][1] for i in range(0, member_count)]
 
 app_num_reps = abs((max(rep_ax)-min(rep_ax))/(2*multr))
 app_num_dems = abs((max(dem_ax)-min(dem_ax))/(2*multd))
@@ -195,11 +213,21 @@ print "Actual republicans : " + str(num_reps)
 print "Approx. democrats : " + str(app_num_dems)
 print "Actual democrats : " + str(num_dems)
 
+fig, ax = plt.subplots()
 plt.plot([multd*dem_vote[i] for i in range(0, bill_count)], [multr*rep_vote[i] for i in range(0, bill_count)], 'go')
 plt.plot(dem_ax, rep_ax, 'yo')
 plt.xlabel("Democratic axis")
 plt.ylabel("Republican axis")
-#plt.savefig(output_folder+"eigenbills_squared_comparison.png")
-plt.show()
+plt.savefig(output_folder+"eigenbills_squared_comparison.png")
+#plt.show()
+plt.close(fig)
 
 
+plt.plot([dem_ax_m[i] for i in other_indices], [rep_ax_m[i] for i in other_indices], 'go')
+plt.plot([dem_ax_m[i] for i in rep_indices], [rep_ax_m[i] for i in rep_indices], 'ro')
+plt.plot([dem_ax_m[i] for i in dem_indices], [rep_ax_m[i] for i in dem_indices], 'bo')
+plt.xlabel("Democratic axis")
+plt.ylabel("Republican axis")
+plt.savefig(output_folder+"eigenmembers_squared.png")
+#plt.show()
+plt.close(fig)
