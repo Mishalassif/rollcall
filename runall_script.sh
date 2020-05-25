@@ -1,8 +1,10 @@
 for i in {100..116}
 do   
-    python rollcall_analysis.py H$i
+    #python rollcall_analysis.py H$i
+    python eigenbill_analysis.py H$i
 done
 for i in {95..99}
 do   
-    python rollcall_analysis.py H0$i
+    #python rollcall_analysis.py H0$i
+    python eigenbill_analysis.py H0$i
 done
