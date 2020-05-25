@@ -169,20 +169,30 @@ print "Number of Failed bills : " + str(len(failed_indices))
 print "Number of Undecided bills : " + str(len(undecided_indices))
 
 polarization = [0 for i in range(0, bill_count)]
+polarization_signed = [0 for i in range(0, bill_count)]
+total_vote = [0 for i in range(0, bill_count)]
 for i in range(0, bill_count):
     for j in rep_indices:
         polarization[i] = polarization[i] + A[j][i]
+        total_vote[i] = total_vote[i] + A[j][i]
     for j in dem_indices:
         polarization[i] = polarization[i] - A[j][i]
+        total_vote[i] = total_vote[i] + A[j][i]
+    polarization_signed[i] = polarization[i]
     polarization[i] = abs(polarization[i])
 
+rep_vote = [0 for i in range(0, bill_count)]
+dem_vote = [0 for i in range(0, bill_count)]
+for i in range(0, bill_count):
+    rep_vote[i] = sum(A[rep_indices,i])
+    dem_vote[i] = sum(A[dem_indices,i])
 with open(output_folder+'eigenmembers.csv', 'w') as csvfile:
     data = zip(name, party, u[:,0], u[:,1])
     writercsv = csv.writer(csvfile)
     for row in data:
         writercsv.writerow(row)
 with open(output_folder+'eigenbills.csv', 'w') as csvfile:
-    data = zip(result, vh[0,:], vh[1,:], polarization)
+    data = zip(result, vh[0,:], vh[1,:], polarization_signed, total_vote, rep_vote, dem_vote)
     writercsv = csv.writer(csvfile)
     for row in data:
         writercsv.writerow(row)
