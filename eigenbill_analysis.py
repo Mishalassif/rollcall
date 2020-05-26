@@ -198,6 +198,18 @@ if abs(mxd/(sq_d*sq_x)) < abs(myd/(sq_d*sq_y)):
     rep_ax = x2
     dem_ax_m = [memspace_lt[1,0]*eigenmembers[i][0]+memspace_lt[1,1]*eigenmembers[i][1] for i in range(0, member_count)]
     rep_ax_m = [memspace_lt[0,0]*eigenmembers[i][0]+memspace_lt[0,1]*eigenmembers[i][1] for i in range(0, member_count)]
+    if multd < 0:
+        multd = -multd
+        for i in range(0, member_count):
+           dem_ax_m[i] = -1*dem_ax_m[i]
+        for i in range(0, bill_count):
+           dem_ax[i] = -1*dem_ax[i]
+    if multr < 0:
+        multr = -multr
+        for i in range(0, member_count):
+           rep_ax_m[i] = -1*rep_ax_m[i]
+        for i in range(0, bill_count):
+           rep_ax[i] = -1*rep_ax[i]
 else:
     multd = mxd/(sq_d*sq_d)
     multr = myr/(sq_r*sq_r)
@@ -205,6 +217,18 @@ else:
     rep_ax = y2
     dem_ax_m = [memspace_lt[0,0]*eigenmembers[i][0]+memspace_lt[0,1]*eigenmembers[i][1] for i in range(0, member_count)]
     rep_ax_m = [memspace_lt[1,0]*eigenmembers[i][0]+memspace_lt[1,1]*eigenmembers[i][1] for i in range(0, member_count)]
+    if multd < 0:
+        multd = -multd
+        for i in range(0, member_count):
+           dem_ax_m[i] = -1*dem_ax_m[i]
+        for i in range(0, bill_count):
+           dem_ax[i] = -1*dem_ax[i]
+    if multr < 0:
+        multr = -multr
+        for i in range(0, member_count):
+           rep_ax_m[i] = -1*rep_ax_m[i]
+        for i in range(0, bill_count):
+           rep_ax[i] = -1*rep_ax[i]
 
 app_num_reps = abs((max(rep_ax)-min(rep_ax))/(2*multr))
 app_num_dems = abs((max(dem_ax)-min(dem_ax))/(2*multd))
