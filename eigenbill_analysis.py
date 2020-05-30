@@ -190,7 +190,10 @@ sq_d = math.sqrt(sq_d)
 sq_x = math.sqrt(sq_x)
 sq_y = math.sqrt(sq_y)
 
-memspace_lt = lt_final*np.matrix([[1/ev_1,0],[0,1/ev_2]])
+#temp = lt_final*np.matrix([[1/ev_1,0],[0,1/ev_2]])
+memspace_lt = np.transpose(np.linalg.inv(lt_final))*np.matrix([[ev_1,0],[0,ev_2]])
+#memspace_lt = np.linalg.inv(temp)
+print memspace_lt
 if abs(mxd/(sq_d*sq_x)) < abs(myd/(sq_d*sq_y)):
     multd = myd/(sq_d*sq_d)
     multr = mxr/(sq_r*sq_r)
