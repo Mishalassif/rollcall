@@ -237,6 +237,14 @@ print "Actual republicans : " + str(num_reps)
 print "Approx. democrats : " + str(app_num_dems)
 print "Actual democrats : " + str(num_dems)
 
+with open(output_folder+'eigenbills_squared_normalized.csv','w') as csvfile:
+    writercsv = csv.writer(csvfile)
+    for i in range(0, bill_count):
+    #myCsvRow = zip([multd*dem_vote[i] for i in range(0, bill_count)], [multd*rep_vote[i] for i in range(0, bill_count)], dem_ax, rep_ax, dem_ax_m, rep_ax_m)
+        myCsvRow = [multd*dem_vote[i], multr*rep_vote[i], dem_ax[i], rep_ax[i]]
+        writercsv.writerow(myCsvRow)
+
+
 fig, ax = plt.subplots()
 plt.plot([multd*dem_vote[i] for i in range(0, bill_count)], [multr*rep_vote[i] for i in range(0, bill_count)], 'go')
 plt.plot(dem_ax, rep_ax, 'yo')
