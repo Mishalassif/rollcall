@@ -8,8 +8,11 @@ from mpl_toolkits.mplot3d import Axes3D
 import sys
 import math
 
-if len(sys.argv) == 2:
+interactive_mode = True
+if len(sys.argv) >= 2:
     congress = sys.argv[1]
+    if len(sys.argv) == 3:
+        interactive_mode = False
 else:
     congress = 'H100'
 
@@ -26,6 +29,7 @@ dem_vote = []
 with open(data_folder+'eigenbills.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
+        #writercsv.writerow(myCsvRow)
         eigenbills.append(map(float, row[1:3]))
         result.append(row[0])
         polarization_signed.append(float(row[3]))
@@ -150,7 +154,8 @@ plt.plot([x2[i] for i in undecided_indices], [y2[i] for i in undecided_indices],
 plt.plot([x2[i] for i in passed_indices], [y2[i] for i in passed_indices], 'go')
 plt.plot([x2[i] for i in failed_indices], [y2[i] for i in failed_indices], 'ro')
 plt.title("Eigenvectors in bill space colored by result")
-#plt.savefig(output_folder+"eigenbills_squared_pf.png")
+if interactive_mode == False:
+    plt.savefig(output_folder+"eigenbills_squared_pf.png")
 #plt.show()
 plt.close(fig)
 
@@ -163,7 +168,8 @@ colormap = [((-0.6*polarization[i])/max(polarization) + 0.9, (-0.6*polarization[
 fig, ax = plt.subplots()
 plt.scatter(x2[:], y2[:], c=colormap)
 plt.title("Eigenvectors in bill space colored by polarization")
-#plt.savefig(output_folder+"eigenbills_squared_polarized.png")
+if interactive_mode == False:
+    plt.savefig(output_folder+"eigenbills_squared_polarized.png")
 #plt.show()
 plt.close(fig)
 
@@ -247,13 +253,20 @@ with open(output_folder+'eigenbills_squared_normalized.csv','w') as csvfile:
         myCsvRow = [multd*dem_vote[i], multr*rep_vote[i], dem_ax[i], rep_ax[i]]
         writercsv.writerow(myCsvRow)
 
+with open(output_folder+'eigenmembers_squared_normalized.csv','w') as csvfile:
+    writercsv = csv.writer(csvfile)
+    for i in range(0, member_count):
+    #myCsvRow = zip([multd*dem_vote[i] for i in range(0, bill_count)], [multd*rep_vote[i] for i in range(0, bill_count)], dem_ax, rep_ax, dem_ax_m, rep_ax_m)
+        myCsvRow = [dem_ax_m[i], rep_ax_m[i]]
+        writercsv.writerow(myCsvRow)
 
 fig, ax = plt.subplots()
 plt.plot([multd*dem_vote[i] for i in range(0, bill_count)], [multr*rep_vote[i] for i in range(0, bill_count)], 'go')
 plt.plot(dem_ax, rep_ax, 'yo')
 plt.xlabel("Democratic axis")
 plt.ylabel("Republican axis")
-plt.savefig(output_folder+"eigenbills_squared_comparison.png")
+if interactive_mode == False:
+    plt.savefig(output_folder+"eigenbills_squared_comparison.png")
 #plt.show()
 plt.close(fig)
 
@@ -263,6 +276,10 @@ plt.plot([dem_ax_m[i] for i in rep_indices], [rep_ax_m[i] for i in rep_indices],
 plt.plot([dem_ax_m[i] for i in dem_indices], [rep_ax_m[i] for i in dem_indices], 'bo')
 plt.xlabel("Democratic axis")
 plt.ylabel("Republican axis")
-plt.savefig(output_folder+"eigenmembers_squared.png")
+if interactive_mode == False:
+    plt.savefig(output_folder+"eigenmembers_squared.png")
 #plt.show()
 plt.close(fig)
+
+
+
