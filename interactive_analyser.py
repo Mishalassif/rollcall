@@ -77,7 +77,7 @@ selected_indices = []
 while 1 > 0:
     selected_indices = []
     plt.clf()
-    mode = raw_input("Do you want to analyze members or bills [m/b]:")
+    mode = input("Do you want to analyze members or bills [m/b]:")
     if len(mode) == 0:
         print("Enter valid input [m/b]")
         break
@@ -92,6 +92,7 @@ while 1 > 0:
         plt.pause(1)
         pts = []
         plt.title("Select 2 corners of the rectangle")
+        #fig, ax = plt.subplots()
         pts = np.asarray(plt.ginput(2, timeout=-1))
         xmin = min(pts[:,0])
         xmax = max(pts[:,0])
@@ -100,10 +101,11 @@ while 1 > 0:
         pts = np.asarray([[xmin, ymin],[xmax,ymin],[xmax,ymax],[xmin,ymax]])
         ph = plt.fill(pts[:,0], pts[:,1], 'y', lw=2, alpha=0.5)
         plt.draw()
+        plt.pause(0.001)
         while 1 > 0:
-            ans = raw_input("Happy with the rectangle? [y/n]")
+            ans = input("Happy with the rectangle? [y/n]")
             if ans[0].lower() == 'y':
-                file_name = raw_input("Enter the filename you wish to save the details in:")
+                file_name = input("Enter the filename you wish to save the details in:")
                 for i in range(0, len(dem_ax_m)):
                     if dem_ax_m[i] <= xmax and dem_ax_m[i] >= xmin and rep_ax_m[i] <= ymax and rep_ax_m[i] >= ymin:
                         selected_indices.append(i)
@@ -137,10 +139,11 @@ while 1 > 0:
         pts = np.asarray([[xmin, ymin],[xmax,ymin],[xmax,ymax],[xmin,ymax]])
         ph = plt.fill(pts[:,0], pts[:,1], 'y', lw=2, alpha=0.5)
         plt.draw()
+        plt.pause(0.001)
         while 1 > 0:
-            ans = raw_input("Happy with the rectangle? [y/n]")
+            ans = input("Happy with the rectangle? [y/n]")
             if ans[0].lower() == 'y':
-                file_name = raw_input("Enter the filename you wish to save the details in:")
+                file_name = input("Enter the filename you wish to save the details in:")
                 for i in range(0, len(dem_ax)):
                     if dem_ax[i] <= xmax and dem_ax[i] >= xmin and rep_ax[i] <= ymax and rep_ax[i] >= ymin:
                         selected_indices.append(i)
