@@ -112,8 +112,8 @@ y2 = [y2[i]/scaley for i in range(0, bill_count)]
 
 scale = np.matrix([[1/scalex, 0],[0,1/scaley]])
 lt_final = scale*B*Ainv
-print "Squaring linear transformation :"
-print scale*B*Ainv
+print("Squaring linear transformation :")
+print(scale*B*Ainv)
 with open(output_folder+'eigenbills_squared.csv', 'w') as csvfile:
     data = zip(x2, y2)
     writercsv = csv.writer(csvfile)
@@ -199,7 +199,7 @@ sq_y = math.sqrt(sq_y)
 #temp = lt_final*np.matrix([[1/ev_1,0],[0,1/ev_2]])
 memspace_lt = np.transpose(np.linalg.inv(lt_final))*np.matrix([[ev_1,0],[0,ev_2]])
 #memspace_lt = np.linalg.inv(temp)
-print memspace_lt
+print(memspace_lt)
 if abs(mxd/(sq_d*sq_x)) < abs(myd/(sq_d*sq_y)):
     multd = myd/(sq_d*sq_d)
     multr = mxr/(sq_r*sq_r)
@@ -241,10 +241,10 @@ else:
 
 app_num_reps = abs((max(rep_ax)-min(rep_ax))/(2*multr))
 app_num_dems = abs((max(dem_ax)-min(dem_ax))/(2*multd))
-print "Approx. republicans : " + str(app_num_reps)
-print "Actual republicans : " + str(num_reps)
-print "Approx. democrats : " + str(app_num_dems)
-print "Actual democrats : " + str(num_dems)
+print("Approx. republicans : " + str(app_num_reps))
+print("Actual republicans : " + str(num_reps))
+print("Approx. democrats : " + str(app_num_dems))
+print("Actual democrats : " + str(num_dems))
 
 with open(output_folder+'eigenbills_squared_normalized.csv','w') as csvfile:
     writercsv = csv.writer(csvfile)

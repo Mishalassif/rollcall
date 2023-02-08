@@ -35,8 +35,8 @@ with open(data_folder+congress+'_rollcalls.csv') as csv_file:
             bill_roll[row[2]] = bill_count
         bill_count = bill_count + 1
 
-print "Number of members : " + str(member_count)
-print "Number of bills : " + str(bill_count)
+print("Number of members : " + str(member_count))
+print("Number of bills : " + str(bill_count))
 
 A = np.zeros((member_count, bill_count))
 I = np.eye(bill_count)
@@ -57,20 +57,20 @@ with open(data_folder+congress+'_votes.csv') as csv_file:
                     abstention_count = abstention_count + 1
         vote_count = vote_count+1
 
-print A
-print "Number of votes : " + str(vote_count)
-print "Number of abstentions : " + str(abstention_count)
+print(A)
+print("Number of votes : " + str(vote_count))
+print("Number of abstentions : " + str(abstention_count))
 
 yn_vote_count = 0
 for i in range(0, member_count):
     for j in range(0, bill_count):
         yn_vote_count = yn_vote_count + abs(A[i][j])
 
-print "Fraction of votes : " + str(float(vote_count)/(member_count*bill_count))
-print (yn_vote_count)/vote_count
-print (yn_vote_count)/(member_count*bill_count)
-print (yn_vote_count+abstention_count)/vote_count
-print (yn_vote_count+abstention_count)/(member_count*bill_count)
+print("Fraction of votes : " + str(float(vote_count)/(member_count*bill_count)))
+print((yn_vote_count)/vote_count)
+print((yn_vote_count)/(member_count*bill_count))
+print((yn_vote_count+abstention_count)/vote_count)
+print((yn_vote_count+abstention_count)/(member_count*bill_count))
 
 u, s, vh = np.linalg.svd(A)
 smat = np.zeros((member_count, bill_count))
@@ -80,8 +80,8 @@ rel_energy = np.copy(s)
 mar_energy = np.copy(s)
 total_energy = (np.linalg.norm(A))*(np.linalg.norm(A))
 
-print "Max EVs : " + str(s[0]) + ", " + str(s[1])
-print "Approximation error(p) in l2 : " + str(100*np.linalg.norm(A_d-A)/np.linalg.norm(A))
+print("Max EVs : " + str(s[0]) + ", " + str(s[1]))
+print("Approximation error(p) in l2 : " + str(100*np.linalg.norm(A_d-A)/np.linalg.norm(A)))
 
 cutoff = 0
 for i in range(0, len(s)-1):
@@ -89,8 +89,8 @@ for i in range(0, len(s)-1):
     mar_energy[i] = np.square(np.linalg.norm(s[:i])/np.linalg.norm(s[:i+1]))
     if np.square(np.linalg.norm(s[:i])/np.linalg.norm(s)) > 0.95:
         cutoff = i
-        print "90 percent Cutoff at EV no. " + str(i+1)
-        print "Percentage energy : " + str(100*np.square(np.linalg.norm(s[:i])/np.linalg.norm(s)))
+        print("90 percent Cutoff at EV no. " + str(i+1))
+        print("Percentage energy : " + str(100*np.square(np.linalg.norm(s[:i])/np.linalg.norm(s))))
         break
 
 '''
@@ -142,9 +142,9 @@ with open(data_folder+congress+'_members.csv') as csv_file:
             name[i] = row[9]
         i = i + 1
 
-print "Number of Republicans : " + str(len(rep_indices))
-print "Number of Democrats : " + str(len(dem_indices))
-print "Number of Others : " + str(len(other_indices))
+print("Number of Republicans : " + str(len(rep_indices)))
+print("Number of Democrats : " + str(len(dem_indices)))
+print("Number of Others : " + str(len(other_indices)))
 
 with open(hd_file,'a') as csvfile:
     writercsv = csv.writer(csvfile)
@@ -169,9 +169,9 @@ with open(data_folder+congress+'_rollcalls.csv') as csv_file:
             result[i] = row[14]
         i = i + 1
 
-print "Number of Passed bills : " + str(len(passed_indices))
-print "Number of Failed bills : " + str(len(failed_indices))
-print "Number of Undecided bills : " + str(len(undecided_indices))
+print("Number of Passed bills : " + str(len(passed_indices)))
+print("Number of Failed bills : " + str(len(failed_indices)))
+print("Number of Undecided bills : " + str(len(undecided_indices)))
 
 polarization = [0 for i in range(0, bill_count)]
 polarization_signed = [0 for i in range(0, bill_count)]
@@ -208,7 +208,7 @@ a = sum(multn)*sum(multn)/sum(multd)
 multd = [vh[1,i]*vh[1,i] for i in range(0, len(vh[1,:]))]
 a = a/sum(multd)
 a = math.sqrt(a)
-print "a : " + str(a)
+print("a : " + str(a))
 
 multn = [vh[0,i]*(sum(A[rep_indices,i])-sum(A[dem_indices,i])) for i in range(0, len(vh[1,:]))]
 multd = [(sum(A[rep_indices,i])-sum(A[dem_indices,i]))*(sum(A[rep_indices,i])-sum(A[dem_indices,i])) for i in range(0, len(vh[1,:]))]
@@ -216,7 +216,7 @@ b = sum(multn)*sum(multn)/sum(multd)
 multd = [vh[0,i]*vh[0,i] for i in range(0, len(vh[1,:]))]
 b = b/sum(multd) 
 b = math.sqrt(b)
-print "b : " + str(b)
+print("b : " + str(b))
 
 multn = [vh[1,i]*(sum(A[rep_indices,i])-sum(A[dem_indices,i])) for i in range(0, len(vh[1,:]))]
 multd = [(sum(A[rep_indices,i])-sum(A[dem_indices,i]))*(sum(A[rep_indices,i])-sum(A[dem_indices,i])) for i in range(0, len(vh[1,:]))]
@@ -224,7 +224,7 @@ b = sum(multn)*sum(multn)/sum(multd)
 multd = [vh[1,i]*vh[1,i] for i in range(0, len(vh[1,:]))]
 b = b/sum(multd) 
 b = math.sqrt(b)
-print "b : " + str(b)
+print("b : " + str(b))
 '''
 Eigenmembers colored by party plot
 '''
@@ -237,7 +237,7 @@ plt.plot([u[i,0] for i in other_indices], [u[i,1] for i in other_indices], 'go')
 plt.plot([u[i,0] for i in rep_indices], [u[i,1] for i in rep_indices], 'ro')
 plt.plot([u[i,0] for i in dem_indices], [u[i,1] for i in dem_indices], 'bo')
 plt.title("Eigenvectors in member space colored by party")
-#plt.savefig(output_folder+"eigenmembers.png")
+plt.savefig(output_folder+"eigenmembers.png")
 #plt.show()
 plt.close(fig)
 
@@ -259,7 +259,7 @@ plt.xlabel("Largest EV in bill space")
 plt.subplot(2,2,4)
 plt.hist(vh[1,:], bins=n_bins)
 plt.xlabel("Second largest EV in bill space")
-#plt.savefig(output_folder+"evdistribution.png")
+plt.savefig(output_folder+"evdistribution.png")
 #plt.show()
 plt.close(fig)
 
@@ -272,7 +272,7 @@ colormap = [((-0.6*polarization[i])/max(polarization) + 0.9, (-0.6*polarization[
 fig, ax = plt.subplots()
 plt.scatter(vh[0,:], vh[1,:], c=colormap)
 plt.title("Eigenvectors in bill space colored by polarization")
-#plt.savefig(output_folder+"eigenbills_polarized.png")
+plt.savefig(output_folder+"eigenbills_polarized.png")
 #plt.show()
 plt.close(fig)
 
@@ -288,7 +288,7 @@ plt.plot([vh[0,i] for i in undecided_indices], [vh[1,i] for i in undecided_indic
 plt.plot([vh[0,i] for i in passed_indices], [vh[1,i] for i in passed_indices], 'go')
 plt.plot([vh[0,i] for i in failed_indices], [vh[1,i] for i in failed_indices], 'ro')
 plt.title("Eigenvectors in bill space colored by result")
-#plt.savefig(output_folder+"eigenbills_pf.png")
+plt.savefig(output_folder+"eigenbills_pf.png")
 #plt.show()
 plt.close(fig)
 
