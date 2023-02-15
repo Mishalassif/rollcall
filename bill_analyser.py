@@ -76,8 +76,9 @@ def update_annot(ind, stat='p'):
             zipped = list(zip([dem_ax[i] for i in passed_indices], [rep_ax[i] for i in passed_indices]))
             index = zipped.index((pos[0], pos[1]))
             print(bill_details[passed_indices[index]])
-            text = "Votes: " + str((bill_details[passed_indices[index]][4:]))
+            text = "Status: " + str((bill_details[passed_indices[index]][0])) + "\nVotes: " + str((bill_details[passed_indices[index]][4:]))
     if stat == 'f':
+        print(ind)
         pos = sc_fail.get_offsets()[ind["ind"][0]]
         annot.xy = pos
         if (pos[0], pos[1]) in zip([dem_ax[i] for i in failed_indices], [rep_ax[i] for i in failed_indices]):
@@ -106,19 +107,19 @@ def update_annot(ind, stat='p'):
 def hover(event):
     vis = annot.get_visible()
     if event.inaxes == ax:
-        cont_p, ind = sc_pass.contains(event)
-        cont_f, ind = sc_fail.contains(event)
-        cont_u, ind = sc_unk.contains(event)
+        cont_p, ind_p = sc_pass.contains(event)
+        cont_f, ind_f = sc_fail.contains(event)
+        cont_u, ind_u = sc_unk.contains(event)
         if cont_p:
-            update_annot(ind, 'p')
+            update_annot(ind_p, 'p')
             annot.set_visible(True)
             fig.canvas.draw_idle()
         elif cont_f:
-            update_annot(ind, 'f')
+            update_annot(ind_f, 'f')
             annot.set_visible(True)
             fig.canvas.draw_idle()
         elif cont_u:
-            update_annot(ind, 'u')
+            update_annot(ind_u, 'u')
             annot.set_visible(True)
             fig.canvas.draw_idle()
         else:
@@ -185,9 +186,9 @@ while 1 > 0:
                     bbox=dict(boxstyle="round", fc="w"),
                     arrowprops=dict(arrowstyle="->"))
         annot.set_visible(False)
-        sc_pass = plt.scatter([dem_ax[i] for i in passed_indices], [rep_ax[i] for i in passed_indices], c='g')
-        sc_fail = plt.scatter([dem_ax[i] for i in failed_indices], [rep_ax[i] for i in failed_indices], c='r')
-        sc_unk = plt.scatter([dem_ax[i] for i in unknown_indices], [rep_ax[i] for i in unknown_indices], c='y')
+        sc_pass = plt.scatter([dem_ax[i] for i in passed_indices], [rep_ax[i] for i in passed_indices], c='g', s=5, alpha=0.5)
+        sc_fail = plt.scatter([dem_ax[i] for i in failed_indices], [rep_ax[i] for i in failed_indices], c='r', s=5, alpha=0.5)
+        sc_unk = plt.scatter([dem_ax[i] for i in unknown_indices], [rep_ax[i] for i in unknown_indices], c='y', s=5, alpha=0.5)
         print((sc_pass))
         plt.xlabel("Democratic axis")
         plt.ylabel("Republican axis")

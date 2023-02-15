@@ -152,6 +152,7 @@ with open(hd_file,'a') as csvfile:
     writercsv.writerow(myCsvRow)
 
 result = ['Unkown' for i in range(0, bill_count)]
+#info = ['Unkown' for i in range(0, bill_count)]
 passed_indices = []
 failed_indices = []
 undecided_indices = []
