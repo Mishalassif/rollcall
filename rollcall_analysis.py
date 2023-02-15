@@ -152,7 +152,7 @@ with open(hd_file,'a') as csvfile:
     writercsv.writerow(myCsvRow)
 
 result = ['Unkown' for i in range(0, bill_count)]
-#info = ['Unkown' for i in range(0, bill_count)]
+info = ['-' for i in range(0, bill_count)]
 passed_indices = []
 failed_indices = []
 undecided_indices = []
@@ -168,6 +168,7 @@ with open(data_folder+congress+'_rollcalls.csv') as csv_file:
             else:
                 undecided_indices.append(i)
             result[i] = row[14]
+            info[i] = row[15] + ", " + row[16]
         i = i + 1
 
 print("Number of Passed bills : " + str(len(passed_indices)))
@@ -198,7 +199,7 @@ with open(output_folder+'eigenmembers.csv', 'w') as csvfile:
     for row in data:
         writercsv.writerow(row)
 with open(output_folder+'eigenbills.csv', 'w') as csvfile:
-    data = zip(result, vh[0,:], vh[1,:], polarization_signed, total_vote, rep_vote, dem_vote)
+    data = zip(result, vh[0,:], vh[1,:], polarization_signed, total_vote, rep_vote, dem_vote, info)
     writercsv = csv.writer(csvfile)
     for row in data:
         writercsv.writerow(row)

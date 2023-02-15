@@ -76,7 +76,8 @@ def update_annot(ind, stat='p'):
             zipped = list(zip([dem_ax[i] for i in passed_indices], [rep_ax[i] for i in passed_indices]))
             index = zipped.index((pos[0], pos[1]))
             print(bill_details[passed_indices[index]])
-            text = "Status: " + str((bill_details[passed_indices[index]][0])) + "\nVotes: " + str((bill_details[passed_indices[index]][4:]))
+            text = "Description: " + bill_details[passed_indices[index]][-2] + ", " + bill_details[passed_indices[index]][-1] + "\nStatus: " + str((bill_details[passed_indices[index]][0])) + ", Votes: " + str((bill_details[passed_indices[index]][4:-2]))
+            text = "Description: " + bill_details[passed_indices[index]][-1] + "\nStatus: " + str((bill_details[passed_indices[index]][0])) + ", Votes: " + str((bill_details[passed_indices[index]][4:-1]))
     if stat == 'f':
         print(ind)
         pos = sc_fail.get_offsets()[ind["ind"][0]]
@@ -85,7 +86,8 @@ def update_annot(ind, stat='p'):
             zipped = list(zip([dem_ax[i] for i in failed_indices], [rep_ax[i] for i in failed_indices]))
             index = zipped.index((pos[0], pos[1]))
             print(bill_details[failed_indices[index]])
-            text = "Votes: " + str((bill_details[failed_indices[index]][4:]))
+            text = "Description: " + bill_details[failed_indices[index]][-2] + ", " + bill_details[failed_indices[index]][-1] + "\nStatus: " + str((bill_details[failed_indices[index]][0])) + ", Votes: " + str((bill_details[failed_indices[index]][4:-2]))
+            text = "Description: " + bill_details[failed_indices[index]][-1] + "\nStatus: " + str((bill_details[failed_indices[index]][0])) + ", Votes: " + str((bill_details[failed_indices[index]][4:-1]))
     if stat == 'u':
         pos = sc_unk.get_offsets()[ind["ind"][0]]
         annot.xy = pos
@@ -93,7 +95,8 @@ def update_annot(ind, stat='p'):
             zipped = list(zip([dem_ax[i] for i in unknown_indices], [rep_ax[i] for i in unknown_indices]))
             index = zipped.index((pos[0], pos[1]))
             print(bill_details[unknown_indices[index]])
-            text = "Votes: " + str((bill_details[unknown_indices[index]][4:]))
+            text = "Description: " + bill_details[unknown_indices[index]][-2] + ", " + bill_details[unknown_indices[index]][-1] + "\nStatus: " + str((bill_details[unknown_indices[index]][0])) + ", Votes: " + str((bill_details[unknown_indices[index]][4:-2]))
+            text = "Description: " + bill_details[unknown_indices[index]][-1] + "\nStatus: " + str((bill_details[unknown_indices[index]][0])) + ", Votes: " + str((bill_details[unknown_indices[index]][4:-1]))
     #sc_pass = plt.scatter([dem_ax[i] for i in passed_indices], [rep_ax[i] for i in passed_indices], c='g')
     annot.set_text(text)
     if stat == 'p':
@@ -186,10 +189,9 @@ while 1 > 0:
                     bbox=dict(boxstyle="round", fc="w"),
                     arrowprops=dict(arrowstyle="->"))
         annot.set_visible(False)
-        sc_pass = plt.scatter([dem_ax[i] for i in passed_indices], [rep_ax[i] for i in passed_indices], c='g', s=5, alpha=0.5)
-        sc_fail = plt.scatter([dem_ax[i] for i in failed_indices], [rep_ax[i] for i in failed_indices], c='r', s=5, alpha=0.5)
-        sc_unk = plt.scatter([dem_ax[i] for i in unknown_indices], [rep_ax[i] for i in unknown_indices], c='y', s=5, alpha=0.5)
-        print((sc_pass))
+        sc_pass = plt.scatter([dem_ax[i] for i in passed_indices], [rep_ax[i] for i in passed_indices], c='g', s=10, alpha=0.5)
+        sc_fail = plt.scatter([dem_ax[i] for i in failed_indices], [rep_ax[i] for i in failed_indices], c='r', s=10, alpha=0.5)
+        sc_unk = plt.scatter([dem_ax[i] for i in unknown_indices], [rep_ax[i] for i in unknown_indices], c='y', s=10, alpha=0.5)
         plt.xlabel("Democratic axis")
         plt.ylabel("Republican axis")
         fig.canvas.mpl_connect("motion_notify_event", hover)
