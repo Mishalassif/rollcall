@@ -75,17 +75,17 @@ def update_annot(ind, stat='p'):
         if (pos[0], pos[1]) in zip([dem_ax[i] for i in passed_indices], [rep_ax[i] for i in passed_indices]):
             zipped = list(zip([dem_ax[i] for i in passed_indices], [rep_ax[i] for i in passed_indices]))
             index = zipped.index((pos[0], pos[1]))
-            print(bill_details[passed_indices[index]])
+            #print(bill_details[passed_indices[index]])
             text = "Description: " + bill_details[passed_indices[index]][-2] + ", " + bill_details[passed_indices[index]][-1] + "\nStatus: " + str((bill_details[passed_indices[index]][0])) + ", Votes: " + str((bill_details[passed_indices[index]][4:-2]))
             text = "Description: " + bill_details[passed_indices[index]][-1] + "\nStatus: " + str((bill_details[passed_indices[index]][0])) + ", Votes: " + str((bill_details[passed_indices[index]][4:-1]))
     if stat == 'f':
-        print(ind)
+        #print(ind)
         pos = sc_fail.get_offsets()[ind["ind"][0]]
         annot.xy = pos
         if (pos[0], pos[1]) in zip([dem_ax[i] for i in failed_indices], [rep_ax[i] for i in failed_indices]):
             zipped = list(zip([dem_ax[i] for i in failed_indices], [rep_ax[i] for i in failed_indices]))
             index = zipped.index((pos[0], pos[1]))
-            print(bill_details[failed_indices[index]])
+            #print(bill_details[failed_indices[index]])
             text = "Description: " + bill_details[failed_indices[index]][-2] + ", " + bill_details[failed_indices[index]][-1] + "\nStatus: " + str((bill_details[failed_indices[index]][0])) + ", Votes: " + str((bill_details[failed_indices[index]][4:-2]))
             text = "Description: " + bill_details[failed_indices[index]][-1] + "\nStatus: " + str((bill_details[failed_indices[index]][0])) + ", Votes: " + str((bill_details[failed_indices[index]][4:-1]))
     if stat == 'u':
@@ -94,7 +94,7 @@ def update_annot(ind, stat='p'):
         if (pos[0], pos[1]) in zip([dem_ax[i] for i in unknown_indices], [rep_ax[i] for i in unknown_indices]):
             zipped = list(zip([dem_ax[i] for i in unknown_indices], [rep_ax[i] for i in unknown_indices]))
             index = zipped.index((pos[0], pos[1]))
-            print(bill_details[unknown_indices[index]])
+            #print(bill_details[unknown_indices[index]])
             text = "Description: " + bill_details[unknown_indices[index]][-2] + ", " + bill_details[unknown_indices[index]][-1] + "\nStatus: " + str((bill_details[unknown_indices[index]][0])) + ", Votes: " + str((bill_details[unknown_indices[index]][4:-2]))
             text = "Description: " + bill_details[unknown_indices[index]][-1] + "\nStatus: " + str((bill_details[unknown_indices[index]][0])) + ", Votes: " + str((bill_details[unknown_indices[index]][4:-1]))
     #sc_pass = plt.scatter([dem_ax[i] for i in passed_indices], [rep_ax[i] for i in passed_indices], c='g')
@@ -145,6 +145,7 @@ while 1 > 0:
         break
 
     if mode[0] == 'm':
+        file_name = input("Enter the filename you wish to save the details in:")
         plt.plot([dem_ax_m[i] for i in dem_indices], [rep_ax_m[i] for i in dem_indices], 'bo')
         plt.plot([dem_ax_m[i] for i in rep_indices], [rep_ax_m[i] for i in rep_indices], 'ro')
         plt.plot([dem_ax_m[i] for i in other_indices], [rep_ax_m[i] for i in other_indices], 'go')
@@ -153,7 +154,7 @@ while 1 > 0:
         plt.draw()
         plt.pause(1)
         pts = []
-        plt.title("Select 2 corners of the rectangle")
+        plt.title("Select 2 corners of the Upper left rectangle")
         #fig, ax = plt.subplots()
         pts = np.asarray(plt.ginput(2, timeout=-1))
         xmin = min(pts[:,0])
@@ -165,16 +166,111 @@ while 1 > 0:
         plt.draw()
         plt.pause(0.001)
         while 1 > 0:
-            ans = input("Happy with the rectangle? [y/n]")
+            #ans = input("Happy with the rectangle? [y/n]")
+            ans=  ['y']
             if ans[0].lower() == 'y':
-                file_name = input("Enter the filename you wish to save the details in:")
                 for i in range(0, len(dem_ax_m)):
                     if dem_ax_m[i] <= xmax and dem_ax_m[i] >= xmin and rep_ax_m[i] <= ymax and rep_ax_m[i] >= ymin:
                         selected_indices.append(i)
                 with open(write_folder+file_name+'.csv','w') as csvfile:
                     writercsv = csv.writer(csvfile)
+                    myCsvRow = ['Upper', 'Left']
+                    writercsv.writerow(myCsvRow)
                     for i in selected_indices:
-                        myCsvRow = member_details[i]
+                        myCsvRow = bill_details[i]
+                        writercsv.writerow(myCsvRow)
+                break
+            elif ans[0].lower() == 'n':
+                print("Ok, Starting over")
+                break
+            else:
+                print("Enter valid input [y/n]")
+        plt.title("Select 2 corners of the Lower left rectangle")
+        #fig, ax = plt.subplots()
+        pts = np.asarray(plt.ginput(2, timeout=-1))
+        xmin = min(pts[:,0])
+        xmax = max(pts[:,0])
+        ymin = min(pts[:,1])
+        ymax = max(pts[:,1])
+        pts = np.asarray([[xmin, ymin],[xmax,ymin],[xmax,ymax],[xmin,ymax]])
+        ph = plt.fill(pts[:,0], pts[:,1], 'y', lw=2, alpha=0.5)
+        plt.draw()
+        plt.pause(0.001)
+        while 1 > 0:
+            #ans = input("Happy with the rectangle? [y/n]")
+            ans=  ['y']
+            if ans[0].lower() == 'y':
+                for i in range(0, len(dem_ax_m)):
+                    if dem_ax_m[i] <= xmax and dem_ax_m[i] >= xmin and rep_ax_m[i] <= ymax and rep_ax_m[i] >= ymin:
+                        selected_indices.append(i)
+                with open(write_folder+file_name+'.csv','a') as csvfile:
+                    writercsv = csv.writer(csvfile)
+                    myCsvRow = ['Lower', 'Left']
+                    writercsv.writerow(myCsvRow)
+                    for i in selected_indices:
+                        myCsvRow = bill_details[i]
+                        writercsv.writerow(myCsvRow)
+                break
+            elif ans[0].lower() == 'n':
+                print("Ok, Starting over")
+                break
+            else:
+                print("Enter valid input [y/n]")
+        plt.title("Select 2 corners of the Lower right rectangle")
+        #fig, ax = plt.subplots()
+        pts = np.asarray(plt.ginput(2, timeout=-1))
+        xmin = min(pts[:,0])
+        xmax = max(pts[:,0])
+        ymin = min(pts[:,1])
+        ymax = max(pts[:,1])
+        pts = np.asarray([[xmin, ymin],[xmax,ymin],[xmax,ymax],[xmin,ymax]])
+        ph = plt.fill(pts[:,0], pts[:,1], 'y', lw=2, alpha=0.5)
+        plt.draw()
+        plt.pause(0.001)
+        while 1 > 0:
+            #ans = input("Happy with the rectangle? [y/n]")
+            ans=  ['y']
+            if ans[0].lower() == 'y':
+                for i in range(0, len(dem_ax_m)):
+                    if dem_ax_m[i] <= xmax and dem_ax_m[i] >= xmin and rep_ax_m[i] <= ymax and rep_ax_m[i] >= ymin:
+                        selected_indices.append(i)
+                with open(write_folder+file_name+'.csv','a') as csvfile:
+                    writercsv = csv.writer(csvfile)
+                    myCsvRow = ['Lower', 'Right']
+                    writercsv.writerow(myCsvRow)
+                    for i in selected_indices:
+                        myCsvRow = bill_details[i]
+                        writercsv.writerow(myCsvRow)
+                break
+            elif ans[0].lower() == 'n':
+                print("Ok, Starting over")
+                break
+            else:
+                print("Enter valid input [y/n]")
+        plt.title("Select 2 corners of the Upper right rectangle")
+        #fig, ax = plt.subplots()
+        pts = np.asarray(plt.ginput(2, timeout=-1))
+        xmin = min(pts[:,0])
+        xmax = max(pts[:,0])
+        ymin = min(pts[:,1])
+        ymax = max(pts[:,1])
+        pts = np.asarray([[xmin, ymin],[xmax,ymin],[xmax,ymax],[xmin,ymax]])
+        ph = plt.fill(pts[:,0], pts[:,1], 'y', lw=2, alpha=0.5)
+        plt.draw()
+        plt.pause(0.001)
+        while 1 > 0:
+            #ans = input("Happy with the rectangle? [y/n]")
+            ans=  ['y']
+            if ans[0].lower() == 'y':
+                for i in range(0, len(dem_ax_m)):
+                    if dem_ax_m[i] <= xmax and dem_ax_m[i] >= xmin and rep_ax_m[i] <= ymax and rep_ax_m[i] >= ymin:
+                        selected_indices.append(i)
+                with open(write_folder+file_name+'.csv','a') as csvfile:
+                    writercsv = csv.writer(csvfile)
+                    myCsvRow = ['Upper', 'Right']
+                    writercsv.writerow(myCsvRow)
+                    for i in selected_indices:
+                        myCsvRow = bill_details[i]
                         writercsv.writerow(myCsvRow)
                 break
             elif ans[0].lower() == 'n':
@@ -184,6 +280,7 @@ while 1 > 0:
                 print("Enter valid input [y/n]")
 
     elif mode[0] == 'b':
+        file_name = input("Enter the filename you wish to save the details in:")
         fig, ax = plt.subplots()
         annot = ax.annotate("", xy=(0,0), xytext=(20,20),textcoords="offset points",
                     bbox=dict(boxstyle="round", fc="w"),
@@ -195,10 +292,10 @@ while 1 > 0:
         plt.xlabel("Democratic axis")
         plt.ylabel("Republican axis")
         fig.canvas.mpl_connect("motion_notify_event", hover)
-        plt.show()
-        plt.pause(1)
+        #plt.show()
+        #plt.pause(1)
         pts = []
-        plt.title("Select 2 corners of the rectangle")
+        plt.title("Select 2 corners of the Upper left rectangle")
         #fig, ax = plt.subplots()
         pts = np.asarray(plt.ginput(2, timeout=-1))
         xmin = min(pts[:,0])
@@ -210,14 +307,17 @@ while 1 > 0:
         plt.draw()
         plt.pause(0.001)
         while 1 > 0:
-            ans = input("Happy with the rectangle? [y/n]")
+            #ans = input("Happy with the rectangle? [y/n]")
+            selected_indices = []
+            ans=  ['y']
             if ans[0].lower() == 'y':
-                file_name = input("Enter the filename you wish to save the details in:")
                 for i in range(0, len(dem_ax_m)):
                     if dem_ax_m[i] <= xmax and dem_ax_m[i] >= xmin and rep_ax_m[i] <= ymax and rep_ax_m[i] >= ymin:
                         selected_indices.append(i)
                 with open(write_folder+file_name+'.csv','w') as csvfile:
                     writercsv = csv.writer(csvfile)
+                    myCsvRow = ['Upper', 'Left']
+                    writercsv.writerow(myCsvRow)
                     for i in selected_indices:
                         myCsvRow = bill_details[i]
                         writercsv.writerow(myCsvRow)
@@ -227,7 +327,102 @@ while 1 > 0:
                 break
             else:
                 print("Enter valid input [y/n]")
-
+        plt.title("Select 2 corners of the Lower left rectangle")
+        #fig, ax = plt.subplots()
+        pts = np.asarray(plt.ginput(2, timeout=-1))
+        xmin = min(pts[:,0])
+        xmax = max(pts[:,0])
+        ymin = min(pts[:,1])
+        ymax = max(pts[:,1])
+        pts = np.asarray([[xmin, ymin],[xmax,ymin],[xmax,ymax],[xmin,ymax]])
+        ph = plt.fill(pts[:,0], pts[:,1], 'y', lw=2, alpha=0.5)
+        plt.draw()
+        plt.pause(0.001)
+        while 1 > 0:
+            selected_indices = []
+            #ans = input("Happy with the rectangle? [y/n]")
+            ans=  ['y']
+            if ans[0].lower() == 'y':
+                for i in range(0, len(dem_ax_m)):
+                    if dem_ax_m[i] <= xmax and dem_ax_m[i] >= xmin and rep_ax_m[i] <= ymax and rep_ax_m[i] >= ymin:
+                        selected_indices.append(i)
+                with open(write_folder+file_name+'.csv','a') as csvfile:
+                    writercsv = csv.writer(csvfile)
+                    myCsvRow = ['Lower', 'Left']
+                    writercsv.writerow(myCsvRow)
+                    for i in selected_indices:
+                        myCsvRow = bill_details[i]
+                        writercsv.writerow(myCsvRow)
+                break
+            elif ans[0].lower() == 'n':
+                print("Ok, Starting over")
+                break
+            else:
+                print("Enter valid input [y/n]")
+        plt.title("Select 2 corners of the Lower right rectangle")
+        #fig, ax = plt.subplots()
+        pts = np.asarray(plt.ginput(2, timeout=-1))
+        xmin = min(pts[:,0])
+        xmax = max(pts[:,0])
+        ymin = min(pts[:,1])
+        ymax = max(pts[:,1])
+        pts = np.asarray([[xmin, ymin],[xmax,ymin],[xmax,ymax],[xmin,ymax]])
+        ph = plt.fill(pts[:,0], pts[:,1], 'y', lw=2, alpha=0.5)
+        plt.draw()
+        plt.pause(0.001)
+        while 1 > 0:
+            selected_indices = []
+            #ans = input("Happy with the rectangle? [y/n]")
+            ans=  ['y']
+            if ans[0].lower() == 'y':
+                for i in range(0, len(dem_ax_m)):
+                    if dem_ax_m[i] <= xmax and dem_ax_m[i] >= xmin and rep_ax_m[i] <= ymax and rep_ax_m[i] >= ymin:
+                        selected_indices.append(i)
+                with open(write_folder+file_name+'.csv','a') as csvfile:
+                    writercsv = csv.writer(csvfile)
+                    myCsvRow = ['Lower', 'Right']
+                    writercsv.writerow(myCsvRow)
+                    for i in selected_indices:
+                        myCsvRow = bill_details[i]
+                        writercsv.writerow(myCsvRow)
+                break
+            elif ans[0].lower() == 'n':
+                print("Ok, Starting over")
+                break
+            else:
+                print("Enter valid input [y/n]")
+        plt.title("Select 2 corners of the Upper right rectangle")
+        #fig, ax = plt.subplots()
+        pts = np.asarray(plt.ginput(2, timeout=-1))
+        xmin = min(pts[:,0])
+        xmax = max(pts[:,0])
+        ymin = min(pts[:,1])
+        ymax = max(pts[:,1])
+        pts = np.asarray([[xmin, ymin],[xmax,ymin],[xmax,ymax],[xmin,ymax]])
+        ph = plt.fill(pts[:,0], pts[:,1], 'y', lw=2, alpha=0.5)
+        plt.draw()
+        plt.pause(0.001)
+        while 1 > 0:
+            selected_indices = []
+            #ans = input("Happy with the rectangle? [y/n]")
+            ans=  ['y']
+            if ans[0].lower() == 'y':
+                for i in range(0, len(dem_ax_m)):
+                    if dem_ax_m[i] <= xmax and dem_ax_m[i] >= xmin and rep_ax_m[i] <= ymax and rep_ax_m[i] >= ymin:
+                        selected_indices.append(i)
+                with open(write_folder+file_name+'.csv','a') as csvfile:
+                    writercsv = csv.writer(csvfile)
+                    myCsvRow = ['Upper', 'Right']
+                    writercsv.writerow(myCsvRow)
+                    for i in selected_indices:
+                        myCsvRow = bill_details[i]
+                        writercsv.writerow(myCsvRow)
+                break
+            elif ans[0].lower() == 'n':
+                print("Ok, Starting over")
+                break
+            else:
+                print("Enter valid input [y/n]")
 
     else:
         print("Entered unkown reply, quitting.")
