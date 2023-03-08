@@ -15,6 +15,6 @@ In the console, a prompt appears where entering b analyzes bills and m analyzes 
 then appears to give a filename to save the selected data. If the filename is 'bill5', the details of the bills
 in the four corner regions will be saved to the file 'output/raw/H115/interactive_output/bill5.csv'. After entering
 the filename, the plot of bills/members appears from which you can select four rectangular regions by
-clicking on their diagonal corners. The plot also shows the bill details upon hovering on a bill.
+clicking on their diagonal corners. The plot also shows the bill/member details while hovering on a bill/member.
 
 
