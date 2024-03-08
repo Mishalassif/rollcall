@@ -1,0 +1,111 @@
+Looking at congress 115
+Number of Tokens collected:
+2044
+Total bills:
+1207
+1
+205
+421
+240
+340
+1207
+[]
+Done Running Vectorization
+Avg dist b/w ll corner bills, Avg dist b/w ll corner and non-corner bills : 0.0,0.6
+Percentage increase : inf
+Avg dist b/w lr corner bills, Avg dist b/w lr corner and non-corner bills : 0.45,0.56
+Percentage increase : 0.23
+Avg dist b/w ul corner bills, Avg dist b/w ul corner and non-corner bills : 0.6,0.69
+Percentage increase : 0.16
+Avg dist b/w ur corner bills, Avg dist b/w ur corner and non-corner bills : 0.52,0.67
+Percentage increase : 0.3
+['the']
+Done Running Vectorization
+Avg dist b/w ll corner bills, Avg dist b/w ll corner and non-corner bills : 0.0,0.57
+Percentage increase : inf
+Avg dist b/w lr corner bills, Avg dist b/w lr corner and non-corner bills : 0.45,0.58
+Percentage increase : 0.28
+Avg dist b/w ul corner bills, Avg dist b/w ul corner and non-corner bills : 0.67,0.77
+Percentage increase : 0.14
+Avg dist b/w ur corner bills, Avg dist b/w ur corner and non-corner bills : 0.56,0.73
+Percentage increase : 0.31
+['the', 'to']
+Done Running Vectorization
+Avg dist b/w ll corner bills, Avg dist b/w ll corner and non-corner bills : 0.0,0.63
+Percentage increase : inf
+Avg dist b/w lr corner bills, Avg dist b/w lr corner and non-corner bills : 0.51,0.62
+Percentage increase : 0.21
+Avg dist b/w ul corner bills, Avg dist b/w ul corner and non-corner bills : 0.69,0.8
+Percentage increase : 0.15
+Avg dist b/w ur corner bills, Avg dist b/w ur corner and non-corner bills : 0.6,0.78
+Percentage increase : 0.3
+['the', 'to', 'on']
+Done Running Vectorization
+Avg dist b/w ll corner bills, Avg dist b/w ll corner and non-corner bills : 0.0,0.77
+Percentage increase : inf
+Avg dist b/w lr corner bills, Avg dist b/w lr corner and non-corner bills : 0.59,0.72
+Percentage increase : 0.22
+Avg dist b/w ul corner bills, Avg dist b/w ul corner and non-corner bills : 0.73,0.87
+Percentage increase : 0.19
+Avg dist b/w ur corner bills, Avg dist b/w ur corner and non-corner bills : 0.65,0.88
+Percentage increase : 0.36
+['the', 'to', 'on', 'of']
+Done Running Vectorization
+Avg dist b/w ll corner bills, Avg dist b/w ll corner and non-corner bills : 0.0,0.77
+Percentage increase : inf
+Avg dist b/w lr corner bills, Avg dist b/w lr corner and non-corner bills : 0.59,0.72
+Percentage increase : 0.22
+Avg dist b/w ul corner bills, Avg dist b/w ul corner and non-corner bills : 0.79,0.88
+Percentage increase : 0.12
+Avg dist b/w ur corner bills, Avg dist b/w ur corner and non-corner bills : 0.65,0.88
+Percentage increase : 0.36
+['the', 'to', 'on', 'of', 'and']
+Done Running Vectorization
+Avg dist b/w ll corner bills, Avg dist b/w ll corner and non-corner bills : 0.0,0.77
+Percentage increase : inf
+Avg dist b/w lr corner bills, Avg dist b/w lr corner and non-corner bills : 0.59,0.72
+Percentage increase : 0.23
+Avg dist b/w ul corner bills, Avg dist b/w ul corner and non-corner bills : 0.8,0.9
+Percentage increase : 0.12
+Avg dist b/w ur corner bills, Avg dist b/w ur corner and non-corner bills : 0.71,0.9
+Percentage increase : 0.27
+['the', 'to', 'on', 'of', 'and', 'for']
+Done Running Vectorization
+Avg dist b/w ll corner bills, Avg dist b/w ll corner and non-corner bills : 0.0,0.77
+Percentage increase : inf
+Avg dist b/w lr corner bills, Avg dist b/w lr corner and non-corner bills : 0.59,0.72
+Percentage increase : 0.23
+Avg dist b/w ul corner bills, Avg dist b/w ul corner and non-corner bills : 0.85,0.9
+Percentage increase : 0.07
+Avg dist b/w ur corner bills, Avg dist b/w ur corner and non-corner bills : 0.71,0.9
+Percentage increase : 0.27
+['the', 'to', 'on', 'of', 'and', 'for', 'agreeing']
+Done Running Vectorization
+Avg dist b/w ll corner bills, Avg dist b/w ll corner and non-corner bills : 0.0,0.74
+Percentage increase : inf
+Avg dist b/w lr corner bills, Avg dist b/w lr corner and non-corner bills : 0.59,0.72
+Percentage increase : 0.22
+Avg dist b/w ul corner bills, Avg dist b/w ul corner and non-corner bills : 0.85,0.91
+Percentage increase : 0.07
+Avg dist b/w ur corner bills, Avg dist b/w ur corner and non-corner bills : 0.71,0.9
+Percentage increase : 0.27
+['the', 'to', 'on', 'of', 'and', 'for', 'agreeing', 'providing']
+Done Running Vectorization
+Avg dist b/w ll corner bills, Avg dist b/w ll corner and non-corner bills : 0.0,0.74
+Percentage increase : inf
+Avg dist b/w lr corner bills, Avg dist b/w lr corner and non-corner bills : 0.59,0.72
+Percentage increase : 0.22
+Avg dist b/w ul corner bills, Avg dist b/w ul corner and non-corner bills : 0.88,0.91
+Percentage increase : 0.04
+Avg dist b/w ur corner bills, Avg dist b/w ur corner and non-corner bills : 0.71,0.9
+Percentage increase : 0.27
+['the', 'to', 'on', 'of', 'and', 'for', 'agreeing', 'providing', 'motion']
+Done Running Vectorization
+Avg dist b/w ll corner bills, Avg dist b/w ll corner and non-corner bills : 0.0,0.74
+Percentage increase : inf
+Avg dist b/w lr corner bills, Avg dist b/w lr corner and non-corner bills : 0.6,0.73
+Percentage increase : 0.21
+Avg dist b/w ul corner bills, Avg dist b/w ul corner and non-corner bills : 0.88,0.91
+Percentage increase : 0.04
+Avg dist b/w ur corner bills, Avg dist b/w ur corner and non-corner bills : 0.75,0.92
+Percentage increase : 0.22

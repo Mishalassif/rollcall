@@ -1,0 +1,44 @@
+Looking at congress 115
+Number of Tokens collected:
+2044
+Total bills:
+1207
+1
+205
+421
+240
+340
+1207
+Done Running Vectorization
+1
+(2044, 1)
+205
+(2044, 1)
+421
+(2044, 1)
+240
+(2044, 1)
+340
+(2044, 1)
+Average distance between corner bills: 
+0.6417004468079837
+Average distance between non-corner bills: 
+0.5849652349026605
+Average distance between corner and non-corner bills: 
+0.6525794171329197
+Average distance between ll corner bills: 
+0
+Average distance between lr corner bills: 
+0.45337527076668793
+Average distance between ul corner bills: 
+0.5952341488707527
+Average distance between ur corner bills: 
+0.5171370701309442
+Average distance between ll corner and non-corner bills: 
+0.6001276930128746
+Average distance between lr corner and non-corner bills: 
+0.5584189615942535
+Average distance between ul corner and non-corner bills: 
+0.6886350090820204
+Average distance between ur corner and non-corner bills: 
+0.6699791708786738

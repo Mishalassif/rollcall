@@ -1,0 +1,44 @@
+========== MOST COMMON BILLS ===========
+
+
+   (',onagreeingtotheamendment', 170)
+   (',tableappealoftherulingofthechair', 13)
+   ('\n', 4)
+   (',onmotiontofixtheconveningtime', 3)
+
+
+========== MOST COMMON KEYWORDS ===========
+
+
+   ('the', 1599)   ('to', 1011)   ('of', 981)   ('on', 882)   ('and', 736)
+   ('for', 681)   ('act', 541)   ('providing', 397)   ('consideration', 370)   ('motion', 315)
+   ('agreeing', 306)   ('rules', 251)   ('suspend', 238)   ('amendment', 214)   ('pass', 192)
+   ('', 190)   ('h.r.', 172)   ('bill', 153)   ('(h.r.', 149)   ('2017', 147)
+   ('resolution', 145)   ('as', 135)   ('question', 129)   ('previous', 128)   ('ordering', 128)
+   ('amended', 114)   ('with', 112)   ('passage', 99)   ('2018', 97)   ('other', 94)
+   ('purposes', 81)   ('instructions', 79)   ('in', 78)   ('recommit', 78)   ('states', 66)
+   ('united', 66)   ('department', 64)   ('rule', 57)   ('fiscal', 57)   ('from', 57)
+   ('act;', 56)   ('by', 55)   ('a', 52)   ('through', 50)   ('year', 50)
+   ('2017;', 47)   ('appropriations', 45)   ('amend', 43)   ('federal', 43)   ('senate', 42)
+   ('title', 42)   ('national', 42)   ('relating', 41)   ('defense', 39)   ('making', 36)
+   ('protection', 35)   ('code', 33)   ('period', 32)   ('september', 32)   ('submitted', 31)
+   ('congressional', 31)   ('veterans', 30)   ('access', 30)   ('during', 29)   ('health', 29)
+   ('proceedings', 28)   ('2019', 28)   ('regulatory', 28)   ('30', 27)   ('ending', 27)
+   ('motions', 24)   ('accountability', 24)   ('certain', 23)   ('improvement', 23)   ('authorization', 23)
+   ('reform', 23)   ('disapproval', 22)   ('provide', 22)   ('tax', 22)   ('an', 21)
+   ('under', 20)   ('financial', 20)   ('water', 20)   ('protecting', 20)   ('business', 20)
+   ('small', 20)   ('relief', 20)   ('further', 19)   ('5', 19)   ('table', 19)
+   ('cuts', 19)   ('care', 19)   ('security', 18)   ('interior', 18)   ('agree', 17)
+   ('committee', 17)   ('chapter', 17)   ('state', 16)   ('8', 16)   ('prevention', 16)
+   ('related', 16)   ('energy', 16)   ('service', 15)   ('chair', 15)   ('ruling', 15)
+   ('appeal', 15)   ('land', 15)   ('disapproving', 15)   ('res.', 15)   ('savings', 15)
+   ('that', 15)   ('reauthorization', 15)   ('respect', 14)   ('government', 14)   ('at', 14)
+   ('transparency', 14)   ('report', 14)   ('conference', 14)   ('jobs', 14)   ('agencies', 14)
+   ('2018;', 13)   ('affairs', 13)   ('years', 13)   ('development', 13)   ('acquisition', 13)
+   ('community', 13)   ('environment', 13)   ('first', 13)   ('congress', 13)   ('6(a)', 12)
+   ('clause', 12)   ('requirement', 12)   ('waiving', 12)   ('h.j.', 12)   ('secretary', 12)
+   ('budget', 12)   ('management', 12)   ('fy', 12)   ('system', 12)   ('increasing', 12)
+   ('concur', 11)   ('exchange', 11)   ('amendments', 11)   ('nutrition', 11)   ('agriculture', 11)
+   ('right', 11)   ('appropriate', 11)   ('requirements', 11)   ('strengthening', 11)   ('va', 11)
+   ('authorize', 10)   ('economic', 10)   ('may', 10)   ('18', 10)   ('reported', 10)
+   ('resolutions', 10)   ('xiii', 10)   ('against', 10)   ('s.', 10)   ('forth', 10)

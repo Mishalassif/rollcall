@@ -73,10 +73,16 @@ for r in r_list:
         f_ul_list.append(f_ul)
         f_ur_list.append(f_ur)
         c_list.append(f_ll + f_lr + f_ul + f_ur)
-
+    
+    party = ['b' for i in range(95,117)]
+    party = ['b', 'b', 'r', 'r', 'r', 'b', 'b', 'b', 'b', 'r', 'r', 'r', 'y', 'r',
+            'r', 'b', 'b', 'b', 'b', 'r', 'r', 'r']
+    print(len(party) == 117-95)
     plt.title(str(int(100*r)) + '% corner bills')
     plt.ylabel('Fraction of corner bills')
     plt.xlabel('Congress index')
+    for i in range(95,117):
+        plt.axvspan(i, i+1, facecolor=party[i-95], alpha=0.4)
     plt.plot([i for i in range(95,117)], f_ll_list, label='lower left')
     plt.plot([i for i in range(95,117)], f_lr_list, label='lower right')
     plt.plot([i for i in range(95,117)], f_ul_list, label='upper left')

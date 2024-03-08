@@ -1,0 +1,45 @@
+Looking at congress 115
+Total bills:
+1207
+1
+205
+421
+240
+340
+1207
+Initializing Bert distilbert-base-uncased
+Vectorization done on cpu
+Done Running Vectorization
+1
+(768,)
+205
+(768,)
+421
+(768,)
+240
+(768,)
+340
+(768,)
+Done Vectorization
+Average distance between corner bills: 
+0.13111460986421164
+Average distance between non-corner bills: 
+0.06218776918214689
+Average distance between corner and non-corner bills: 
+0.1232445142599581
+Average distance between ll corner bills: 
+0
+Average distance between lr corner bills: 
+0.04015373468456083
+Average distance between ul corner bills: 
+0.15056359938954628
+Average distance between ur corner bills: 
+0.061011890416530865
+Average distance between ll corner and non-corner bills: 
+0.06238869621473195
+Average distance between lr corner and non-corner bills: 
+0.05271301355132858
+Average distance between ul corner and non-corner bills: 
+0.17438617566014994
+Average distance between ur corner and non-corner bills: 
+0.09403273931759261

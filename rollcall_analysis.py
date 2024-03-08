@@ -307,4 +307,18 @@ plt.title("3 Dom. EVs in policy space")
 #plt.show()
 plt.close(fig)
 
-
+#plt.hist2d(vh[0,:], vh[1,:], bins=100)
+#plt.show()
+'''
+Eigenbills colored by pass/fail plot
+'''
+custom_lines = [Line2D([0], [0], color='green', linestyle='None', marker='o'),
+                Line2D([0], [0], color='red', linestyle='None', marker='o'),
+                Line2D([0], [0], color='yellow', linestyle='None', marker='o')]
+fig, ax = plt.subplots()
+ax.legend(custom_lines, ['Passed', 'Failed', 'Undetermined'])
+plt.plot([vh[0,i] for i in undecided_indices], [vh[1,i] for i in undecided_indices], 'yo', alpha=0.1)
+plt.plot([vh[0,i] for i in passed_indices], [vh[1,i] for i in passed_indices], 'go', alpha=0.1)
+plt.plot([vh[0,i] for i in failed_indices], [vh[1,i] for i in failed_indices], 'ro', alpha=0.1)
+plt.title("Eigenvectors in bill space colored by result")
+plt.show()

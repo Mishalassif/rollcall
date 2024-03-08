@@ -20,7 +20,7 @@ f_ul_list = []
 f_ur_list = []
 c_list = []
 
-r = 0.1
+r = 0.2
 
 f_ll_bills = []
 f_lr_bills = []
@@ -53,7 +53,10 @@ for i in range(115, 116):
         for row in csv_reader:
             bill_details.append(row)
             for token in bill_details[-1][-1].split(' '):
-                tokens[token.lower()] = 1
+                if token.lower() not in tokens:
+                    tokens[token.lower()] = 1
+                else:
+                    tokens[token.lower()] = tokens[token.lower()]+1
 
     x_min = np.min(bill_mat[:,0])
     x_max = np.max(bill_mat[:,0])
@@ -140,144 +143,177 @@ def vectorize(sent_list):
         vec_list.append(vec)
     return vec_list
 
-vectorized = vectorize(f_ll_bills+f_lr_bills+f_ul_bills+f_ur_bills+f_bills)
-print('Done Running Vectorization')
-if len(f_ll_bills) == 0:
-    vectors_ll = []
-else:
-    vectors_ll = vectorized[0:len(f_ll_bills)]
+import operator
+sorted_tokens = sorted(tokens.items(), key=operator.itemgetter(1), reverse=True)
 
-if len(f_lr_bills) == 0:
-    vectors_lr = []
-else:
-    vectors_lr = vectorized[len(f_ll_bills):len(f_ll_bills)+len(f_lr_bills)]
+import copy
+for i in range(1):
+    stopwords = [word[0] for word in sorted_tokens[:i]]
+    print(stopwords)
 
-if len(f_ul_bills) == 0:
-    vectors_ul = []
-else:
-    vectors_ul = vectorized[len(f_ll_bills)+len(f_lr_bills):len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills)]
+    f_ll_b = copy.deepcopy(f_ll_bills)
+    f_lr_b = copy.deepcopy(f_lr_bills)
+    f_ul_b = copy.deepcopy(f_ul_bills)
+    f_ur_b = copy.deepcopy(f_ur_bills)
+    f_b = copy.deepcopy(f_bills)
 
-if len(f_ur_bills) == 0:
-    vectors_ur = []
-else:
-    vectors_ur = vectorized[len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills):len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills)+len(f_ur_bills)]
+    all_b = f_ll_b+f_lr_b+f_ul_b+f_ur_b+f_b
+    for i in range(len(all_b)):
+        #print(all_b[i])
+        querywords = all_b[i].split()
+        resultwords  = [word for word in querywords if word.lower() not in stopwords]
+        result = ' '.join(resultwords)
+        all_b[i] = result
+        #print(all_b[i])
+    
+    vectorized = vectorize(all_b)
+    print('Done Running Vectorization')
+    if len(f_ll_bills) == 0:
+        vectors_ll = []
+    else:
+        vectors_ll = vectorized[0:len(f_ll_bills)]
 
-if len(f_bills) == 0:
-    vectors = []
-else:
-    vectors = vectorized[len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills)+len(f_ur_bills):len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills)+len(f_ur_bills)+len(f_bills)]
+    if len(f_lr_bills) == 0:
+        vectors_lr = []
+    else:
+        vectors_lr = vectorized[len(f_ll_bills):len(f_ll_bills)+len(f_lr_bills)]
 
-print(len(vectors_ll))
-print(vectors_ll[0].shape)
-print(len(vectors_lr))
-print(vectors_lr[0].shape)
-print(len(vectors_ul))
-print(vectors_ul[0].shape)
-print(len(vectors_ur))
-print(vectors_ur[0].shape)
-print(len(vectors))
-print(vectors[0].shape)
+    if len(f_ul_bills) == 0:
+        vectors_ul = []
+    else:
+        vectors_ul = vectorized[len(f_ll_bills)+len(f_lr_bills):len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills)]
 
-from scipy import spatial
+    if len(f_ur_bills) == 0:
+        vectors_ur = []
+    else:
+        vectors_ur = vectorized[len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills):len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills)+len(f_ur_bills)]
 
-vectors_corner = vectors_ll + vectors_lr + vectors_ul + vectors_ur
+    if len(f_bills) == 0:
+        vectors = []
+    else:
+        vectors = vectorized[len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills)+len(f_ur_bills):len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills)+len(f_ur_bills)+len(f_bills)]
 
-count = 0
-avg = 0
-for i in range(len(vectors_corner)):
-    for j in range(i+1, len(vectors_corner)):
-        count = count + 1
-        avg = (count-1)*avg/count + spatial.distance.cosine(vectors_corner[i], vectors_corner[j])/count
-print('Average distance between corner bills: ')
-print(avg)
-        
+    from scipy import spatial
+    from sklearn.manifold import TSNE
+    from matplotlib import pyplot as plt
+    import matplotlib.patches as mpatches
 
-count = 0
-avg = 0
-for i in range(len(vectors)):
-    for j in range(i+1, len(vectors)):
-        count = count + 1
-        avg = (count-1)*avg/count + spatial.distance.cosine(vectors[i], vectors[j])/count
-print('Average distance between non-corner bills: ')
-print(avg)
+    vectors_corner = vectors_ll + vectors_lr + vectors_ul + vectors_ur
+    vectors_full = vectors_corner + vectors
+    vectors_full = np.stack(vectors_full).squeeze()
+    print(vectors_full.shape)
+    embedding = TSNE(metric='cosine')
+    embed_vectors = embedding.fit_transform(vectors_full)
+    print(embed_vectors.shape)
+    '''
+    colors = np.zeros((vectors_full.shape[0],))
+    for i in range(vectors_full.shape[0]):
+        if i < len(f_ll_bills):
+            colors[i] = 0.2
+        elif i < len(f_ll_bills)+len(f_lr_bills):
+            colors[i] = 0.4
+        elif i < len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills):
+            colors[i] = 0.6
+        elif i < len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills)+len(f_ur_bills):
+            colors[i] = 0.8
+        elif i < len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills)+len(f_ur_bills)+len(f_bills):
+            colors[i] = 1
+    
+    cmap = plt.get_cmap('viridis')
+    print(cmap)
+    ll = mpatches.Patch(color=cmap[0.4], label='LL corner')
+    lr = mpatches.Patch(color=0.55, label='LR corner')
+    ul = mpatches.Patch(color=0.7, label='UL corner')
+    ur = mpatches.Patch(color=0.85, label='UR corner')
+    nc = mpatches.Patch(color=1, label='non-corner')
+    plt.legend(handles=[ll,lr,ul,ur,nc])
 
-count = 0
-avg = 0
-for i in range(len(vectors)):
-    for j in range(len(vectors_corner)):
-        count = count + 1
-        avg = (count-1)*avg/count + spatial.distance.cosine(vectors[i], vectors_corner[j])/count
-print('Average distance between corner and non-corner bills: ')
-print(avg)
+    #ax.scatter(embed_vectors[:len(f_ll_bills),0], embed_vectors[:len(f_ll_bills),1], c=colors[:len(f_ll_bills)], label='LL corner')
+    #ax.scatter(embed_vectors[len(f_ll_bills):len(f_ll_bills)+len(f_lr_bills),0], embed_vectors[len(f_ll_bills):len(f_ll_bills)+len(f_lr_bills),1], c=colors[len(f_ll_bills):len(f_ll_bills)+len(f_lr_bills)], label='LR corner')
+    '''
+    
+    fig, ax = plt.subplots()
+    ax.scatter(embed_vectors[:len(f_ll_bills),0], embed_vectors[:len(f_ll_bills),1], c='r', label='LL corner')
+    ax.scatter(embed_vectors[len(f_ll_bills):len(f_ll_bills)+len(f_lr_bills),0], embed_vectors[len(f_ll_bills):len(f_ll_bills)+len(f_lr_bills),1], c='b', label='LR corner')
+    ax.scatter(embed_vectors[len(f_ll_bills)+len(f_lr_bills):len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills),0], embed_vectors[len(f_ll_bills)+len(f_lr_bills):len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills),1], c='g', label='UL corner')
+    ax.scatter(embed_vectors[len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills):len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills)+len(f_ur_bills),0], embed_vectors[len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills):len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills)+len(f_ur_bills),1], c='y', label='UR corner')
+    ax.scatter(embed_vectors[len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills)+len(f_ur_bills):,0], embed_vectors[len(f_ll_bills)+len(f_lr_bills)+len(f_ul_bills)+len(f_ur_bills):,1], c='k', label='non-corner')
+    ax.legend()
+    plt.show()
 
-count = 0
-avg = 0
-for i in range(len(vectors_ll)):
-    for j in range(i+1, len(vectors_ll)):
-        count = count + 1
-        avg = (count-1)*avg/count + spatial.distance.cosine(vectors_ll[i], vectors_ll[j])/count
-print('Average distance between ll corner bills: ')
-print(avg)
-        
-count = 0
-avg = 0
-for i in range(len(vectors_lr)):
-    for j in range(i+1, len(vectors_lr)):
-        count = count + 1
-        avg = (count-1)*avg/count + spatial.distance.cosine(vectors_lr[i], vectors_lr[j])/count
-print('Average distance between lr corner bills: ')
-print(avg)
-        
-count = 0
-avg = 0
-for i in range(len(vectors_ul)):
-    for j in range(i+1, len(vectors_ul)):
-        count = count + 1
-        avg = (count-1)*avg/count + spatial.distance.cosine(vectors_ul[i], vectors_ul[j])/count
-print('Average distance between ul corner bills: ')
-print(avg)
-        
-count = 0
-avg = 0
-for i in range(len(vectors_ur)):
-    for j in range(i+1, len(vectors_ur)):
-        count = count + 1
-        avg = (count-1)*avg/count + spatial.distance.cosine(vectors_ur[i], vectors_ur[j])/count
-print('Average distance between ur corner bills: ')
-print(avg)
-        
-count = 0
-avg = 0
-for i in range(len(vectors)):
-    for j in range(len(vectors_ll)):
-        count = count + 1
-        avg = (count-1)*avg/count + spatial.distance.cosine(vectors[i], vectors_ll[j])/count
-print('Average distance between ll corner and non-corner bills: ')
-print(avg)
+    count = 0
+    avg1 = 0.0
+    avg = 0.0
+    for i in range(len(vectors_ll)):
+        for j in range(i+1, len(vectors_ll)):
+            count = count + 1
+            avg = (count-1)*avg/count + spatial.distance.cosine(vectors_ll[i], vectors_ll[j])/count
+    avg1 = avg
+    count = 0
+    avg2 = 0
+    avg = 0
+    for i in range(len(vectors)):
+        for j in range(len(vectors_ll)):
+            count = count + 1
+            avg = (count-1)*avg/count + spatial.distance.cosine(vectors[i], vectors_ll[j])/count
+    avg2 = avg
+    print('Avg dist b/w ll corner bills, Avg dist b/w ll corner and non-corner bills : ' + str(round(avg1,2)) + ',' + str(round(avg2, 2)))
+    print('Percentage increase : ' + str(round(((avg2-avg1)/avg1),2)))
 
-count = 0
-avg = 0
-for i in range(len(vectors)):
-    for j in range(len(vectors_lr)):
-        count = count + 1
-        avg = (count-1)*avg/count + spatial.distance.cosine(vectors[i], vectors_lr[j])/count
-print('Average distance between lr corner and non-corner bills: ')
-print(avg)
+    count = 0
+    avg1 = 0.0
+    avg = 0.0
+    for i in range(len(vectors_lr)):
+        for j in range(i+1, len(vectors_lr)):
+            count = count + 1
+            avg = (count-1)*avg/count + spatial.distance.cosine(vectors_lr[i], vectors_lr[j])/count
+    avg1 = avg
+    count = 0
+    avg2 = 0
+    avg = 0
+    for i in range(len(vectors)):
+        for j in range(len(vectors_lr)):
+            count = count + 1
+            avg = (count-1)*avg/count + spatial.distance.cosine(vectors[i], vectors_lr[j])/count
+    avg2 = avg
+    print('Avg dist b/w lr corner bills, Avg dist b/w lr corner and non-corner bills : ' + str(round(avg1,2)) + ',' + str(round(avg2, 2)))
+    print('Percentage increase : ' + str(round(((avg2-avg1)/avg1),2)))
 
-count = 0
-avg = 0
-for i in range(len(vectors)):
-    for j in range(len(vectors_ul)):
-        count = count + 1
-        avg = (count-1)*avg/count + spatial.distance.cosine(vectors[i], vectors_ul[j])/count
-print('Average distance between ul corner and non-corner bills: ')
-print(avg)
+    count = 0
+    avg1 = 0.0
+    avg = 0.0
+    for i in range(len(vectors_ul)):
+        for j in range(i+1, len(vectors_ul)):
+            count = count + 1
+            avg = (count-1)*avg/count + spatial.distance.cosine(vectors_ul[i], vectors_ul[j])/count
+    avg1 = avg
+    count = 0
+    avg2 = 0
+    avg = 0
+    for i in range(len(vectors)):
+        for j in range(len(vectors_ul)):
+            count = count + 1
+            avg = (count-1)*avg/count + spatial.distance.cosine(vectors[i], vectors_ul[j])/count
+    avg2 = avg
+    print('Avg dist b/w ul corner bills, Avg dist b/w ul corner and non-corner bills : ' + str(round(avg1,2)) + ',' + str(round(avg2, 2)))
+    print('Percentage increase : ' + str(round(((avg2-avg1)/avg1),2)))
 
-count = 0
-avg = 0
-for i in range(len(vectors)):
-    for j in range(len(vectors_ur)):
-        count = count + 1
-        avg = (count-1)*avg/count + spatial.distance.cosine(vectors[i], vectors_ur[j])/count
-print('Average distance between ur corner and non-corner bills: ')
-print(avg)
+    count = 0
+    avg1 = 0.0
+    avg = 0.0
+    for i in range(len(vectors_ur)):
+        for j in range(i+1, len(vectors_ur)):
+            count = count + 1
+            avg = (count-1)*avg/count + spatial.distance.cosine(vectors_ur[i], vectors_ur[j])/count
+    avg1 = avg
+    count = 0
+    avg2 = 0
+    avg = 0
+    for i in range(len(vectors)):
+        for j in range(len(vectors_ur)):
+            count = count + 1
+            avg = (count-1)*avg/count + spatial.distance.cosine(vectors[i], vectors_ur[j])/count
+    avg2 = avg
+    print('Avg dist b/w ur corner bills, Avg dist b/w ur corner and non-corner bills : ' + str(round(avg1,2)) + ',' + str(round(avg2, 2)))
+    print('Percentage increase : ' + str(round(((avg2-avg1)/avg1),2)))
+

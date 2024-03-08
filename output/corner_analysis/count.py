@@ -1,5 +1,6 @@
 import csv
 import sys
+from pprint import pprint
 if len(sys.argv) > 1:
     lower = int(sys.argv[1])
     upper = int(sys.argv[2])
@@ -10,6 +11,7 @@ else:
     upper = 115
 
 congresses = ['H'+str(i)+'_corner_bills.csv' for i in range(lower, upper+1)]
+
 
 bills = dict()
 for cngr in congresses:
@@ -23,7 +25,6 @@ for cngr in congresses:
             else:
                 bills[bill] = 1
 
-print('\n')
 print('========== MOST COMMON BILLS ===========')
 print('\n')
 bills = dict(sorted(bills.items(), key=lambda item: item[1]))
@@ -38,6 +39,7 @@ for bill in bills:
         break
     print('   ' + str(bill))
 
+beautify = False
 print('\n')
 print('========== MOST COMMON KEYWORDS ===========')
 print('\n')
@@ -62,13 +64,22 @@ line_to_print = ''
 rows=5
 keywords = list(keywords.items())
 keywords.reverse()
-for word in keywords:
-    if word[1] < 10:
-        break
-    if count >= 400:
-        break
-    line_to_print = line_to_print + '   ' + str(word)
-    count = count+1
-    if count%rows == 0:
-        print(line_to_print)
-        line_to_print = ''
+if beautify:
+    for word in keywords:
+        if word[1] < 10:
+            break
+        if count >= 400:
+            break
+        line_to_print = line_to_print + '   ' + str(word)
+        count = count+1
+        if count%rows == 0:
+            print(line_to_print)
+            line_to_print = ''
+else:
+    for word in keywords:
+        if word[1] < 10:
+            break
+        if count >= 400:
+            break
+        print(word)
+

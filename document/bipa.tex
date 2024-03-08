@@ -1,0 +1,220 @@
+\documentclass[11pt, letter]{article}
+\input{pr.tex}
+
+% biparametric notation
+
+\newcommand{\sing}{\bm{\Sigma}}
+\newcommand{\phd}{\ph}
+
+\usepackage{algorithm}
+\usepackage[shortlabels]{enumitem}
+\usepackage{algpseudocode}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{intersections}
+\usetikzlibrary{positioning}
+
+\usepackage[margin=1cm]{caption}
+
+\makeatletter \def\BState{\State\hskip-\ALG@thistlm} \makeatother
+
+
+\usepackage{etoolbox} \makeatletter
+\patchcmd{\@maketitle}{\begin{center}}{\begin{flushleft}}{}{}
+\patchcmd{\@maketitle}{\begin{tabular}[t]{c}}{\begin{tabular}[t]{@{}l}}{}{}
+\patchcmd{\@maketitle}{\end{center}}{\end{flushleft}}{}{}
+
+\usepackage{graphicx}
+%\usepackage{float}
+%\usepackage[caption = false]{subfig}
+\usepackage{subcaption}
+\captionsetup{compatibility=false}
+
+\usepackage{layouts}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND AUTHORS
+%----------------------------------------------------------------------------------------
+
+\title{******************}% \footnotetext{The authors were supported by the ARO through the MURI 'Science of Embodied Innovation, Learning and Control'.} } % For titles, only capitalize the first letter
+
+%------------------------------------------------
+
+
+\author{Mishal Assif P K$^1$, Yuliy Baryshnikov$^{1,2,3}$ }
+\date{%
+    $^1$University of Illinois, Department of ECE\\%
+    $^2$University of Illinois, Department of Mathematics\\
+    $^3$Kyushu university, IMI\\[2ex]%
+    \today
+}
+
+
+\maketitle
+\abstract{....}
+%%%%%%%%%%%%%%%
+\section{Methodology}
+\subsection{Dimensionality reduction}
+        We first use SVD to reduce dimensionality of the rollcall matrix data. The first
+        two eigenvalues of SVD alone provide interesting insights into the data. 
+        Using the corresponding eigenvectors to reduce the bill space to two dimensions,
+        we get such figures:
+        \begin{figure}[t]
+        \includegraphics[width=12cm]{images/H117_eigenbills_squared_pf}
+        \centering
+        \caption{Example of bills in the 117th house reduced to two dimensions.}
+        \end{figure}
+        One of the axes in this reduced space represents the total bipartisan support 
+        the bill receives, while the other axis is the degree of partisanship
+        associated with the bill.
+        
+        The spectrum of the corresponding matrix is also shown below, which clearly shows that the first two eigenvectors are significantly larger than the subsequent ones. This is trend has been getting more prominent over time, as evidence by the plot below.
+        \begin{figure}[t]
+        \includegraphics[width=12cm]{images/H117_ev_normalized}
+        \centering
+        \caption{Spectrum of the 117th house matrix}
+        \end{figure}
+        \begin{figure}[t]
+            \includegraphics[width=12cm]{images/leading_evs}
+        \centering
+        \caption{Fraction of leading EVs in the spectrum of house matrices vs Year.}
+        \end{figure}
+
+\subsection{Rank 1 projections}
+        We take the rank 1 projections of the house matrix, and then reorder the axes of the matrix so that the corresponding
+        singular vector are arrange in an increasing order. We show an example of such a matrix in the Figure below.
+        \begin{figure}[t]
+        \includegraphics[width=12cm]{images/H117_projected}
+        \centering
+        \caption{Rank 1 projection of 117th house matrix.}
+        \end{figure}
+        This clearly suggests a division of the bills into 3 categories. 
+
+\subsection{Residual spectrum}
+        We then look at the empirical density and distribution of the residual spectrum, plotted in the figure below.
+        We observe that this density looks very close to the Marchenko-Pastur distribution. This
+        suggests that the voting matrix emerges as a random perturbation to an underlying
+        rank 2 matrix. 
+        \begin{figure}[t]
+        \includegraphics[width=16cm]{images/H116_mp_1}
+        \centering
+        \caption{Residual spectrum density/distribution.}
+        \end{figure}
+        This is further cemented by the fact that the parameter of the Marchenko-Pastur
+        distribution is close to the aspect ratio of the voting matrix, as shown in this figure.
+        \begin{figure}[t]
+        \includegraphics[width=12cm]{images/p_values}
+        \centering
+        \caption{MP Parameter and aspect ratio of the voting matrices.}
+        \end{figure}
+
+\subsection{Corner Bills}
+        One interesting phenomena we observed is that the fraction of bills sitting in three corners
+        of this 2D space has been steadily increasing over the years. We show a plot below
+        demonstrating this:
+        \begin{figure}[t]
+        \includegraphics[width=12cm]{images/corner_bills_15}
+        \centering
+        \caption{Fraction of corner bills vs Year}
+        \end{figure}
+
+\subsection{Mathematical model}
+        Based on the above observations, we propose the following 3-factor bill model, which
+        essentially gives a voting matrix that is a rank 2 perturbation of a random matrix.
+        \begin{figure}[t]
+        \includegraphics[width=12cm]{images/pseudo_cong}
+        \centering
+        \caption{First two eigenvector produced by random matrix model.}
+        \end{figure}
+        \begin{figure}[t]
+        \includegraphics[width=12cm]{images/pseudo_cong_voting}
+        \centering
+        \caption{Voting matrices sampled from the RM model.}
+        \end{figure}
+
+
+        \section{Natural Language Processiong}
+        We test if there are any linguistic patterns in the titles of the bills
+        that distinguish the corner bills from non-corner bills. 
+        We do this using vector embedding techniques for sentences. We consider
+        two different embeddings:
+        \begin{enumerate}
+            \item Word frequency embedding: For this embedding, we first make a list of all
+                words that appear in the titles of all the bills of interest to us. 
+                We then use the vector containing the frequency of each word in a title
+                as the embedding for the sentence. Thus, the sentence is embedded
+                as a vector of dimension equal to the total number of distinct words 
+                present in the bills of interest.
+            \item Pre-trained transformer embedding: In this case we use one of the intermediate
+                layers of a pretrained deep learning based NLP model as the embedding of
+                the sentence.
+        \end{enumerate}
+        After computing both these embeddings for all bills, we did two further analyses on them.
+        \subsection{Cosine-similarity between corner bills and non-corner bills}
+        We first use the cosine-similarity metric as a distance between the sentence embeddings,
+        and compare the average cosine-similarity between corner bills vs. the average cosine-similarity
+        between corner and non-corner bills. The observations here are summarized in tables \ref{tab1} and
+        \ref{tab2}. Clearly, the distance between corner bills is reasonably smaller than the distance between
+        corner and non-corner bills. It should aso be noted that the results with word-frequency embedding is very stable with
+        respect to the removal of frequently occuring tokens, such as "the", "on", "amendment" etc.
+        
+\begin{table}[h!]
+    \centering
+\begin{tabular}{||c | c | c | c ||}
+ \hline
+  & CS b/w corner bills & CS b/w corner and non-corner bills & Percentage increase in CS \\ [0.5ex]
+ \hline\hline
+Lower right & 0.05 & 0.05 & 7\% \\
+ \hline
+ Upper left& 0.15 & 0.18  & 17\% \\
+ \hline
+ Upper right & 0.06 & 0.08 & 42\% \\ [1ex]
+ \hline
+\end{tabular}
+\caption{Cosine-similarity comparison between corner bills and non-corner bills with the Word-Frequency embedding}
+\label{tab1}
+\end{table}
+\begin{table}[h!]
+    \centering
+\begin{tabular}{||c | c | c | c ||}
+ \hline
+  & CS b/w corner bills & CS b/w corner and non-corner bills & Percentage increase in CS \\ [0.5ex]
+ \hline\hline
+Lower right & 0.6 & 0.73 & 21\% \\
+ \hline
+ Upper left& 0.88 & 0.91  & 4\% \\
+ \hline
+ Upper right & 0.75 & 0.92 & 22\% \\ [1ex]
+ \hline
+\end{tabular}
+\caption{Cosine-similarity comparison between corner bills and non-corner bills with the pretrained transformer embedding}
+\label{tab2}
+\end{table}
+
+\subsection{TSNE Embedding}
+
+We can use dimensionality reduction techniques like TSNE to visualize the sentence embeddings
+obtained in 2 dimensions. Figures \ref{fig3} and \ref{fig4} show the TSNE embedding of the word frequency embedding
+and pretrained embedding of the bills respectively. We can clearly see that to a large extent various
+distinct corner bills cluster together with the non-corner bills spread across these clusters.
+        \begin{figure}[t]
+        \includegraphics[width=12cm]{images/classical_embedding_10}
+        \centering
+        \caption{TSNE embedding of WFEs of the bill titles.}
+        \label{fig3}
+        \end{figure}
+        \begin{figure}[t]
+        \includegraphics[width=12cm]{images/bert_embedding_10}
+        \centering
+        \caption{TSNE embedding of PTEs of the bill titles.}
+        \label{fig4}
+        \end{figure}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

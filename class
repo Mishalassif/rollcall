@@ -1,0 +1,25 @@
+Looking at congress 115
+Number of Tokens collected:
+2044
+Total bills:
+1207
+1
+205
+421
+240
+340
+1207
+[]
+Done Running Vectorization
+1
+(2044, 1)
+205
+(2044, 1)
+421
+(2044, 1)
+240
+(2044, 1)
+340
+(2044, 1)
+Average distance between ll corner bills: 
+0
